@@ -1,0 +1,12 @@
+<h1>Editing car</h1>
+
+<% form_for(@car) do |f| %>
+  <%= f.error_messages %>
+  <%= render 'form', :f=>f%>
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @car %> |
+<%= link_to 'Back', cars_path %>

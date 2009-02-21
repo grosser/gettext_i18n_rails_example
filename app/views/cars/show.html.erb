@@ -1,0 +1,10 @@
+<%=s_('Car|Model')%> <%=@car.model%>
+<br/>
+<%=s_('Car|Wheels count')%> <%=@car.wheels_count%>
+==
+<%=@car.wheels_count%> <%=n_('Axis','Axis',@car.wheels_count)%>
+<br/>
+<%=_('Created')%> <%=relative_time_in_words(@car.created_at)%>
+
+<%= link_to 'Edit', edit_car_path(@car) %> |
+<%= link_to 'Back', cars_path %>

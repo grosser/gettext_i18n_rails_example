@@ -1,0 +1,5 @@
+lib/tasks/copy_plugins.rake
+*.sqlite3
+doc
+tmp
+log

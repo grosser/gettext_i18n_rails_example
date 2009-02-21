@@ -1,0 +1,67 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: version 0.0.1\n"
+"POT-Creation-Date: 2009-02-20 12:15+0100\n"
+"PO-Revision-Date: 2009-02-18 14:53+0100\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: app/helpers/locale_helper.rb:4
+msgid "%{relative_time} ago"
+msgstr "vor %{relative_time}"
+
+#: app/views/cars/show.html.erb:5
+msgid "Axis"
+msgid_plural "Axis"
+msgstr[0] "Achse"
+msgstr[1] "Achsen"
+
+#: app/controllers/cars_controller.rb:47
+msgid "Car was successfully created."
+msgstr "Auto wurde erfolgreich gespeichert"
+
+#: app/controllers/cars_controller.rb:64
+msgid "Car was successfully updated."
+msgstr "Auto wurde erfolgreich aktualisiert"
+
+#: app/models/car.rb:-
+msgid "Car|Created at"
+msgstr "Erstellt am"
+
+#: app/models/car.rb:- app/views/cars/show.html.erb:1
+msgid "Car|Model"
+msgstr ""
+
+#: app/models/car.rb:-
+msgid "Car|Updated at"
+msgstr "Aktualisiert am"
+
+#: app/models/car.rb:- app/views/cars/show.html.erb:3
+msgid "Car|Wheels count"
+msgstr "Räderzahl"
+
+#: app/views/cars/show.html.erb:7
+msgid "Created"
+msgstr "Erstellt"
+
+#: app/models/car.rb:-
+msgid "activerecord::sessionstore::session"
+msgstr ""
+
+#: app/models/car.rb:-
+msgid "car"
+msgstr "Auto"
+
+#: app/models/car.rb:-
+msgid "session"
+msgstr ""
