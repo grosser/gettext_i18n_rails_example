@@ -4,7 +4,9 @@
 ==
 <%=@car.wheels_count%> <%=n_('Axis','Axis',@car.wheels_count)%>
 <br/>
-<%=_('Created')%> <%=relative_time_in_words(@car.created_at)%>
+<%=_('Created')%>: <%=relative_time_in_words(@car.created_at)%>
+<br/>
+<%=_('Month')%>: <%=month(@car.created_at)%>
 
 <%= link_to 'Edit', edit_car_path(@car) %> |
 <%= link_to 'Back', cars_path %>

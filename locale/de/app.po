@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: version 0.0.1\n"
-"POT-Creation-Date: 2009-02-20 12:15+0100\n"
+"POT-Creation-Date: 2009-02-23 19:22+0100\n"
 "PO-Revision-Date: 2009-02-18 14:53+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
-#: app/helpers/locale_helper.rb:4
+#: app/helpers/translation_helper.rb:3
 msgid "%{relative_time} ago"
 msgstr "vor %{relative_time}"
 
@@ -53,6 +53,10 @@ msgstr "Räderzahl"
 #: app/views/cars/show.html.erb:7
 msgid "Created"
 msgstr "Erstellt"
+
+#: app/views/cars/show.html.erb:9
+msgid "Month"
+msgstr "Monat"
 
 #: app/models/car.rb:-
 msgid "activerecord::sessionstore::session"
