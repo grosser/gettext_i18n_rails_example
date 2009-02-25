@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: version 0.0.1\n"
-"POT-Creation-Date: 2009-02-23 19:22+0100\n"
+"POT-Creation-Date: 2009-02-25 18:17+0100\n"
 "PO-Revision-Date: 2009-02-18 15:42+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,19 +34,11 @@ msgstr ""
 msgid "Car was successfully updated."
 msgstr ""
 
-#: app/models/car.rb:-
-msgid "Car|Created at"
-msgstr ""
-
-#: app/models/car.rb:- app/views/cars/show.html.erb:1
+#: app/views/cars/show.html.erb:1 locale/model_attributes.rb:3
 msgid "Car|Model"
 msgstr ""
 
-#: app/models/car.rb:-
-msgid "Car|Updated at"
-msgstr ""
-
-#: app/models/car.rb:- app/views/cars/show.html.erb:3
+#: app/views/cars/show.html.erb:3 locale/model_attributes.rb:4
 msgid "Car|Wheels count"
 msgstr ""
 
@@ -58,14 +50,6 @@ msgstr ""
 msgid "Month"
 msgstr ""
 
-#: app/models/car.rb:-
-msgid "activerecord::sessionstore::session"
-msgstr ""
-
-#: app/models/car.rb:-
+#: locale/model_attributes.rb:2
 msgid "car"
-msgstr ""
-
-#: app/models/car.rb:-
-msgid "session"
 msgstr ""
