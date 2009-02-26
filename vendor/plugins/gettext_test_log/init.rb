@@ -1,0 +1,1 @@
+require 'gettext_test_log' if RAILS_ENV=='test'

@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: version 0.0.1\n"
-"POT-Creation-Date: 2009-02-25 18:17+0100\n"
+"POT-Creation-Date: 2009-02-26 19:50+0100\n"
 "PO-Revision-Date: 2009-02-18 15:42+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -52,4 +52,8 @@ msgstr ""
 
 #: locale/model_attributes.rb:2
 msgid "car"
+msgstr ""
+
+#: locale/testlog_phrases.rb:2
+msgid "this is a dynamic translation which was found thorugh gettext_test_log!"
 msgstr ""

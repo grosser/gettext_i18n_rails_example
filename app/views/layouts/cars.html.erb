@@ -11,9 +11,11 @@
 
 <p style="color: green"><%= flash[:notice] %></p>
 
-I18n Locale: <%=I18n.locale%>
-<br/>
-Gettext Locale: <%=FastGettext.locale%>
+<%  for name, locale in [['Deutsch ?',:de],['English ?',:en]] %>
+  <%=link_to(name,current_url(:locale=>locale))%>
+<% end %>
+----
+I18n Locale: <%=I18n.locale%> ---- Gettext Locale: <%=FastGettext.locale%>
 <br/>
 <br/>
 
