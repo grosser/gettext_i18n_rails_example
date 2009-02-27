@@ -11,7 +11,7 @@ Solution
  - use gettext:find / gettext:pack as usual
  - missing translation = missing test, write tests!
 
-This will only work with [FastGettext](http://github.com/grosser/fast_gettext) for now!
+This will only work with [FastGettext](http://github.com/grosser/fast_gettext) and RSpec for now!
 
 Install
 =======
@@ -45,6 +45,17 @@ Examples output
     _("Additional Information")
     _("Address")
     ...
+
+Unwanted translations
+=====================
+When using gettext_i18n_rails, most of the columns of a model will be translated during model tests
+this can be annoying since normally no user will see them.
+To disable this, add to `spec/spec_helper.rb` :
+    class ActiveRecord::Base
+      def self.human_attribute_name(attr)
+        attr.to_s
+      end
+    end
 
 TODO
 ====
