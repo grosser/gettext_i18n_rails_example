@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: version 0.0.1\n"
-"POT-Creation-Date: 2009-02-26 19:50+0100\n"
+"POT-Creation-Date: 2009-02-28 11:32+0200\n"
 "PO-Revision-Date: 2009-02-18 15:42+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,11 +20,20 @@ msgstr ""
 msgid "%{relative_time} ago"
 msgstr ""
 
+#: app/views/cars/index.html.erb:15
+msgid "Are you sure?"
+msgstr ""
+
 #: app/views/cars/show.html.erb:5
 msgid "Axis"
 msgid_plural "Axis"
 msgstr[0] ""
 msgstr[1] ""
+
+#: app/views/cars/edit.html.erb:12 app/views/cars/show.html.erb:12
+#: app/views/cars/new.html.erb:11
+msgid "Back"
+msgstr ""
 
 #: app/controllers/cars_controller.rb:47
 msgid "Car was successfully created."
@@ -42,12 +51,40 @@ msgstr ""
 msgid "Car|Wheels count"
 msgstr ""
 
+#: app/views/cars/new.html.erb:7
+msgid "Create"
+msgstr ""
+
 #: app/views/cars/show.html.erb:7
 msgid "Created"
 msgstr ""
 
+#: app/views/cars/index.html.erb:15
+msgid "Destroy"
+msgstr ""
+
+#: app/views/cars/index.html.erb:14 app/views/cars/show.html.erb:11
+msgid "Edit"
+msgstr ""
+
+#: app/views/cars/edit.html.erb:1
+msgid "Editing car"
+msgstr ""
+
 #: app/views/cars/show.html.erb:9
 msgid "Month"
+msgstr ""
+
+#: app/views/cars/index.html.erb:22 app/views/cars/new.html.erb:1
+msgid "New car"
+msgstr ""
+
+#: app/views/cars/index.html.erb:13 app/views/cars/edit.html.erb:11
+msgid "Show"
+msgstr ""
+
+#: app/views/cars/edit.html.erb:7
+msgid "Update"
 msgstr ""
 
 #: locale/model_attributes.rb:2

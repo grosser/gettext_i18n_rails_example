@@ -10,13 +10,13 @@
   <tr>
     <td><%= car.model %></td>
     <td><%= car.wheels_count %></td>
-    <td><%= link_to 'Show', car %></td>
-    <td><%= link_to 'Edit', edit_car_path(car) %></td>
-    <td><%= link_to 'Destroy', car, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= link_to _('Show'), car %></td>
+    <td><%= link_to _('Edit'), edit_car_path(car) %></td>
+    <td><%= link_to _('Destroy'), car, :confirm => _('Are you sure?'), :method => :delete %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New car', new_car_path %>
+<%= link_to _('New car'), new_car_path %>
