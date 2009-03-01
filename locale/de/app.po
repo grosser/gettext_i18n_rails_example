@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: version 0.0.1\n"
-"POT-Creation-Date: 2009-02-28 11:32+0200\n"
+"POT-Creation-Date: 2009-03-01 20:08+0100\n"
 "PO-Revision-Date: 2009-02-18 14:53+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,7 +30,7 @@ msgid_plural "Axis"
 msgstr[0] "Achse"
 msgstr[1] "Achsen"
 
-#: app/views/cars/edit.html.erb:12 app/views/cars/show.html.erb:12
+#: app/views/cars/show.html.erb:12 app/views/cars/edit.html.erb:12
 #: app/views/cars/new.html.erb:11
 msgid "Back"
 msgstr "Zurück"
@@ -63,13 +63,17 @@ msgstr "Erstellt"
 msgid "Destroy"
 msgstr "Zerstören"
 
-#: app/views/cars/index.html.erb:14 app/views/cars/show.html.erb:11
+#: app/views/cars/show.html.erb:11 app/views/cars/index.html.erb:14
 msgid "Edit"
 msgstr "Ändern"
 
 #: app/views/cars/edit.html.erb:1
 msgid "Editing car"
 msgstr "Ändere Auto"
+
+#: app/views/cars/index.html.erb:1
+msgid "Listing cars"
+msgstr "Alle Autos"
 
 #: app/views/cars/show.html.erb:9
 msgid "Month"
@@ -79,7 +83,7 @@ msgstr "Monat"
 msgid "New car"
 msgstr "Neues Auto"
 
-#: app/views/cars/index.html.erb:13 app/views/cars/edit.html.erb:11
+#: app/views/cars/edit.html.erb:11 app/views/cars/index.html.erb:13
 msgid "Show"
 msgstr "Anzeigen"
 
