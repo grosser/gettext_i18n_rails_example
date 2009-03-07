@@ -4,6 +4,10 @@
 ==
 <%=@car.wheels_count%> <%=n_('Axis','Axis',@car.wheels_count)%>
 <br/>
+<%=s_('Car|Country')%>: <%=country(@car.country)%>
+<br/>
+<%=s_('Car|Manual language')%>: <%=language(@car.manual_language)%>
+<br/>
 <%=_('Created')%>: <%=relative_time_in_words(@car.created_at)%>
 <br/>
 <%=_('Month')%>: <%=month(@car.created_at)%>

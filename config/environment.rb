@@ -19,6 +19,10 @@ Rails::Initializer.run do |config|
   # config.gem "hpricot", :version => '0.6', :source => "http://code.whytheluckystiff.net"
   config.gem "sqlite3-ruby", :lib => "sqlite3"
   config.gem "grosser-fast_gettext", :lib => 'fast_gettext', :version => '~>0.2.10', :source=>"http://gems.github.com/"
+
+  #this is needed for language/country translations
+  config.gem "grosser-i18n_data", :lib => 'i18n_data', :version => '0.2.3', :source=>"http://gems.github.com/"
+
   # config.gem "aws-s3", :lib => "aws/s3"
 
   # Only load the plugins named here, in the order given (default is alphabetical).

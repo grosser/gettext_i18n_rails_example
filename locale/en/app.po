@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: version 0.0.1\n"
-"POT-Creation-Date: 2009-03-01 20:08+0100\n"
+"POT-Creation-Date: 2009-03-07 13:00+0100\n"
 "PO-Revision-Date: 2009-02-18 15:42+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,7 +20,7 @@ msgstr ""
 msgid "%{relative_time} ago"
 msgstr ""
 
-#: app/views/cars/index.html.erb:15
+#: app/views/cars/index.html.erb:15 locale/testlog_phrases.rb:2
 msgid "Are you sure?"
 msgstr ""
 
@@ -30,7 +30,7 @@ msgid_plural "Axis"
 msgstr[0] ""
 msgstr[1] ""
 
-#: app/views/cars/show.html.erb:12 app/views/cars/edit.html.erb:12
+#: app/views/cars/show.html.erb:16 app/views/cars/edit.html.erb:12
 #: app/views/cars/new.html.erb:11
 msgid "Back"
 msgstr ""
@@ -43,11 +43,19 @@ msgstr ""
 msgid "Car was successfully updated."
 msgstr ""
 
+#: app/views/cars/show.html.erb:7 locale/model_attributes.rb:4
+msgid "Car|Country"
+msgstr ""
+
+#: app/views/cars/show.html.erb:9 locale/model_attributes.rb:5
+msgid "Car|Manual language"
+msgstr ""
+
 #: app/views/cars/show.html.erb:1 locale/model_attributes.rb:3
 msgid "Car|Model"
 msgstr ""
 
-#: app/views/cars/show.html.erb:3 locale/model_attributes.rb:4
+#: app/views/cars/show.html.erb:3 locale/model_attributes.rb:6
 msgid "Car|Wheels count"
 msgstr ""
 
@@ -55,15 +63,16 @@ msgstr ""
 msgid "Create"
 msgstr ""
 
-#: app/views/cars/show.html.erb:7
+#: app/views/cars/show.html.erb:11
 msgid "Created"
 msgstr ""
 
-#: app/views/cars/index.html.erb:15
+#: app/views/cars/index.html.erb:15 locale/testlog_phrases.rb:3
 msgid "Destroy"
 msgstr ""
 
-#: app/views/cars/show.html.erb:11 app/views/cars/index.html.erb:14
+#: app/views/cars/show.html.erb:15 app/views/cars/index.html.erb:14
+#: locale/testlog_phrases.rb:4
 msgid "Edit"
 msgstr ""
 
@@ -71,19 +80,21 @@ msgstr ""
 msgid "Editing car"
 msgstr ""
 
-#: app/views/cars/index.html.erb:1
+#: app/views/cars/index.html.erb:1 locale/testlog_phrases.rb:5
 msgid "Listing cars"
 msgstr ""
 
-#: app/views/cars/show.html.erb:9
+#: app/views/cars/show.html.erb:13
 msgid "Month"
 msgstr ""
 
 #: app/views/cars/index.html.erb:22 app/views/cars/new.html.erb:1
+#: locale/testlog_phrases.rb:6
 msgid "New car"
 msgstr ""
 
 #: app/views/cars/edit.html.erb:11 app/views/cars/index.html.erb:13
+#: locale/testlog_phrases.rb:7
 msgid "Show"
 msgstr ""
 
@@ -95,6 +106,6 @@ msgstr ""
 msgid "car"
 msgstr ""
 
-#: locale/testlog_phrases.rb:2
+#: locale/testlog_phrases.rb:8
 msgid "this is a dynamic translation which was found thorugh gettext_test_log!"
 msgstr ""

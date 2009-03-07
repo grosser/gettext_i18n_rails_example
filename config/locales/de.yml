@@ -86,8 +86,10 @@ de:
 
   support:
     array:
+      words_connector: ", "
+      two_words_connector: "und"
+      last_word_connector: "und"
       sentence_connector: "und"
-      skip_last_comma: true
         
   activerecord:
     errors:

@@ -13,6 +13,8 @@ ActiveRecord::Schema.define(:version => 20090218131608) do
 
   create_table "cars", :force => true do |t|
     t.string   "model"
+    t.string   "country",         :limit => 2
+    t.string   "manual_language", :limit => 2
     t.integer  "wheels_count"
     t.datetime "created_at"
     t.datetime "updated_at"
