@@ -56,7 +56,7 @@ small translation file <-> large translation file
 
 Thread Safety and Rails
 =======================
-`text_domains` repository are not stored thread-save, so that they can be added inside the `environment.rb`,
+Parsed `text_domains` are not stored thread-save, so that they can be added inside the `environment.rb`,
 and do not need to be readded for every thread (parsing takes time...).
 
 ###Rails
@@ -89,8 +89,13 @@ Updating translations
 =====================
 ATM you have to use the [original GetText](http://github.com/mutoh/gettext) to create and manage your po/mo-files.
 
-Plugins
-=======
+Advanced features
+=================
+###Abnormal pluralisation
+Pluralisation rules can be set directly via a lambda (see code/specs), or by using the Gettext
+plural definition (see spec/locale/en/test_plural.po or [GNU Gettext documentation](http://www.gnu.org/software/libtool/manual/libc/Advanced-gettext-functions.html).
+
+###Plugins
 Want a yml, xml, database version ?
 Write your own TranslationRepository!
     #fast_gettext/translation_repository/xxx.rb

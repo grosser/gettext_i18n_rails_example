@@ -1,7 +1,7 @@
 --- !ruby/object:Gem::Specification 
 name: grosser-fast_gettext
 version: !ruby/object:Gem::Version 
-  version: 0.2.11
+  version: 0.3.0
 platform: ruby
 authors: 
 - Michael Grosser
@@ -9,7 +9,7 @@ autorequire:
 bindir: bin
 cert_chain: []
 
-date: 2009-02-28 00:00:00 +01:00
+date: 2009-03-09 00:00:00 +01:00
 default_executable: 
 dependencies: []
 
@@ -51,7 +51,9 @@ files:
 - spec/locale/de/test.po
 - spec/locale/en
 - spec/locale/en/LC_MESSAGES
+- spec/locale/en/LC_MESSAGES/plural_test.mo
 - spec/locale/en/LC_MESSAGES/test.mo
+- spec/locale/en/plural_test.po
 - spec/locale/en/test.po
 - spec/spec_helper.rb
 - spec/vendor
@@ -59,6 +61,7 @@ files:
 - spec/vendor/fake_load_path/iconv.rb
 - spec/vendor/iconv_spec.rb
 - spec/vendor/string_spec.rb
+- vendor/CHANGELOG
 - vendor/README.rdoc
 - vendor/empty.mo
 - vendor/iconv.rb
