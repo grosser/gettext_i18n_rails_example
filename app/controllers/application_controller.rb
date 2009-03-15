@@ -8,7 +8,7 @@ class ApplicationController < ActionController::Base
   before_filter :set_gettext_locale
   def set_gettext_locale
     FastGettext.text_domain= 'app'
-    FastGettext.available_locales = ['en','de']
+    FastGettext.available_locales = ['en','de','pl']
     super
   end
 

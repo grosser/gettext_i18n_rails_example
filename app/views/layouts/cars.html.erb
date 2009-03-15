@@ -11,7 +11,7 @@
 
 <p style="color: green"><%= flash[:notice] %></p>
 
-<%  for name, locale in [['Deutsch ?',:de],['English ?',:en]] %>
+<%  for name, locale in [['Deutsch ?',:de],['English ?',:en],['Polski ?',:pl]] %>
   <%=link_to(name,current_url(:locale=>locale))%>
 <% end %>
 ----
