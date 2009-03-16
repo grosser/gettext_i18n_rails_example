@@ -39,10 +39,10 @@ module CountriesAndLanguages
   end
 
   def convert_umlaut_to_base(input)
-    text = input.dup
-    %w[áäa ÁÄÅA óöo ÓÖO íi ÍI úüu ÚÜU ée ÉE ßs].each do |set|
-      text.gsub!(/[#{set[0..-2]}]/,set[-1..-1])
+    $KCODE='u'
+    %w(aáä AÁÄÅ oóö OÓÖ ií IÍ uúü UÚÜ eé EÉ sß).inject(input.dup) do |input, set|
+      to, *from = set.split('')
+      input.gsub(/[#{from}]/, to)
     end
-    text
   end
 end
