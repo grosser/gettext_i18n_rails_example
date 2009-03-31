@@ -53,12 +53,8 @@ private
 
   #returns a hash of all msgid => msgstr
   def messages_from_po_file(file)
-    require 'gettext'
-    require 'gettext/poparser'
-    require 'gettext/mofile'
-    data = MOFile.new
-    GetText::PoParser.new.parse(File.read(file),data)
-    data
+    require 'fast_gettext/po_file'
+    FastGettext::PoFile.conver_to_mo(file).instance_variable_get('@data')
   end
 
   def store_messages(messages,file)
