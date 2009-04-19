@@ -13,3 +13,4 @@ translations for model names/attributes + thrugh gettext-ruby-parser
 Convert them to FastGettext readable format
     rake gettext:pack
 
+You can see this app running at http://blooming-stone-47.heroku.com/
