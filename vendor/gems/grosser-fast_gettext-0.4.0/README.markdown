@@ -1,6 +1,6 @@
 FastGettext
 ===========
-GetText but 9.17 times faster, simple, clean namespace (7 vs 34) and threadsave!
+GetText but 8 x faster, 72 x less memory, simple, clean namespace (7 vs 34) and threadsave!
 
 [Example Rails application](https://github.com/grosser/gettext_i18n_rails_example)
 
@@ -34,24 +34,26 @@ Start translating
 Disable translation errors(like no text domain setup) while doing e.g. console session / testing
     FastGettext.silence_errors
 
-Speed
-=====
+Performance
+===========
 50_000 translations speed / memory
 small translation file <-> large translation file
     Baseline: (doing nothing in a loop)
-    0.410000s / 2904K <->
+    0.420000s / 0K <->
 
     Ideal: (primitive Hash lookup)
-    1.150000s / 3016K <-> 1.130000s / 3016K
+    1.170000s / 112K <-> 1.170000s / 112K
 
     FastGettext:
-    1.800000s / 3040K <-> 1.750000s / 3040K
+    1.960000s / 136K <-> 1.950000s / 268K
 
-    GetText:
-    16.510000s / 5900K <-> 16.400000s / 6072K
+    GetText 2.0:
+    15.490000s / 8872K <-> 15.510000s / 9336K
 
     ActiveSupport I18n::Backend::Simple :
-    31.880000s / 10028K <->
+    32.470000s / 9484K <->
+
+
 
 
 Thread Safety and Rails
@@ -63,7 +65,7 @@ and do not need to be readded for every thread (parsing takes time...).
 Try the [gettext_i18n_rails plugin](http://github.com/grosser/gettext_i18n_rails), it simplifies the setup.
 
 Setting `available_locales`,`text_domain` or `locale` will not work inside the `evironment.rb`, since it runs in a different thread
-then e.g. controllers, so set them inside your application_controller.
+then e.g. controllers, so set them inside your application_controller.  
 
     #environment.rb after initializers
     FastGettext.add_text_domain('accounting',:path=>'locale')
@@ -77,7 +79,7 @@ then e.g. controllers, so set them inside your application_controller.
       def set_locale
         FastGettext.available_locales = ['de','en',...]
         FastGettext.text_domain = 'frontend'
-        sessions[:locale] = I18n.locale = FastGettext.set_locale(params[:locale] || sessions[:locale] || request.env['HTTP_ACCEPT_LANGUAGE'] || 'en')
+        session[:locale] = I18n.locale = FastGettext.set_locale(params[:locale] || session[:locale] || request.env['HTTP_ACCEPT_LANGUAGE'] || 'en')
       end
 
     #application_helper.rb
@@ -87,13 +89,41 @@ then e.g. controllers, so set them inside your application_controller.
 
 Updating translations
 =====================
-ATM you have to use the [original GetText](http://github.com/mutoh/gettext) to create and manage your po/mo-files.
+ATM you have to use the [original GetText](http://github.com/mutoh/gettext) to create and manage your po/mo-files.  
+I already started work on a po/mo parser & reader that is easier to use, contributions welcome @ [pomo](http://github.com/grosser/pomo)
 
 Advanced features
 =================
 ###Abnormal pluralisation
 Pluralisation rules can be set directly via a lambda (see code/specs), or by using the Gettext
-plural definition (see spec/locale/en/test_plural.po or [GNU Gettext documentation](http://www.gnu.org/software/libtool/manual/libc/Advanced-gettext-functions.html).
+plural definition (see spec/locale/en/test_plural.po or [Plural expressions for all languages](http://translate.sourceforge.net/wiki/l10n/pluralforms).
+
+###default_text_domain
+If you only use one text domain, setting `FastGettext.default_text_domain = 'app'`
+is sufficient and no more `text_domain=` is needed
+
+###default_locale
+If the simple rule of "first `availble_locale` or 'en'" is not suficcient for you, simply set `FastGettext.default_locale = 'de'`.
+
+###Chains
+You can use any number of repositories to find a translation. Simply add them to a chain and when
+the first cannot translate a given key, the next is asked and so forth.
+    repos = [
+      FastGettext::TranslationRepository.build('old', :path=>'....'),
+      FastGettext::TranslationRepository.build('new', :path=>'....')
+    ]
+    FastGettext.add_text_domain 'combined', :type=>:chain, :chain=>repos
+
+#Logger
+When you want to know which keys could not be translated, or where used, add a Logger to a Chain:
+    repos = [
+      FastGettext::TranslationRepository.build('app', :path=>'....')
+      FastGettext::TranslationRepository.build('logger', :type=>:logger, :callback=>lamda{|msgid_or_array_of_ids| ... }),
+    }
+    FastGettext.add_text_domain 'combined', :type=>:chain, :chain=>repos
+If the Logger is in position #1 it will see all translations, if it is in position #2 it will only see the unfound.
+Unfound may not always mean missing, if you chose not to translate a word because the msgid is a good translation, it will appear nevertheless.
+A lambda or anything that responds to `call` will do as callback.
 
 ###Plugins
 Want a yml, xml, database version ?
@@ -102,16 +132,28 @@ Write your own TranslationRepository!
     module FastGettext
       module TranslationRepository
         class Wtf
-          define initialize(name,options), available_locales, [key], plural(singular,plural,count)
+          define initialize(name,options), [key], plural(*msgids) and
+          either inherit from Base or define available_locales and pluralisation rule
         end
       end
     end
 
+FAQ
+===
+ - [Problems with ActiveRecord messages?](http://wiki.github.com/grosser/fast_gettext/activerecord)
+
+TODO
+====
+ - use `default_locale=(x)` internally, atm the default is available_locales.first || 'en'
+ - use `default_text_domain=(x)` internally, atm default is nil...
 
 Author
 ======
 Mo/Po-file parsing from Masao Mutoh, see vendor/README
 
-Michael Grosser  
+###Contributors
+ - [geekq](http://www.innoq.com/blog/vd)
+
+[Michael Grosser](http://pragmatig.wordpress.com)  
 grosser.michael@gmail.com  
 Hereby placed under public domain, do what you want, just do not hold me accountable...  
