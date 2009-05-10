@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: version 0.0.1\n"
-"POT-Creation-Date: 2009-03-16 12:31+0100\n"
+"POT-Creation-Date: 2009-05-10 17:39+0200\n"
 "PO-Revision-Date: 2009-02-18 15:42+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -106,8 +106,16 @@ msgstr ""
 msgid "Update"
 msgstr ""
 
+#: app/models/car.rb:2
+msgid "activerecord.errors.models.car.attributes.model.blank"
+msgstr "-- please choose a model or I will not continue!"
+
 #: locale/model_attributes.rb:2
 msgid "car"
+msgstr ""
+
+#: app/views/cars/text.haml:2
+msgid "msgids with braces (like this) work too..."
 msgstr ""
 
 #: locale/testlog_phrases.rb:8
