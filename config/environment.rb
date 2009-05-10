@@ -18,7 +18,7 @@ Rails::Initializer.run do |config|
   # config.gem "bj"
   # config.gem "hpricot", :version => '0.6', :source => "http://code.whytheluckystiff.net"
   config.gem "sqlite3-ruby", :lib => "sqlite3"
-  config.gem "grosser-fast_gettext", :lib => 'fast_gettext', :version => '~>0.4.0', :source=>"http://gems.github.com/"
+  config.gem "grosser-fast_gettext", :lib => 'fast_gettext', :version => '~>0.4.8', :source=>"http://gems.github.com/"
   #only used for mo/po file generation in development, !do not load(:lib=>false)! since it will only eat 7mb ram
   config.gem "gettext", :lib => false, :version => '>=1.9.3'
 
