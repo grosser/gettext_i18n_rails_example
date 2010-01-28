@@ -25,11 +25,11 @@ Setup
     #environment.rb
     Rails::Initializer.run do |config|
       ...
-      config.gem "grosser-i18n_data", :lib => 'i18n_data', :version => '0.2.3', :source=>"http://gems.github.com/"
+      config.gem "i18n_data"
     end
 
 Author
 ======
-Michael Grosser  
+[Michael Grosser](http://pragmatig.wordpress.com)  
 grosser.michael@gmail.com  
 Hereby placed under public domain, do what you want, just do not hold me accountable...  
