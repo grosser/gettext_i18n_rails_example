@@ -1,0 +1,246 @@
+VA;;Holy See (Vatican City State)
+CC;;Kisiwa cha Cocos (Keeling)
+GT;;Guatemala
+JP;;Japan
+SE;;Sweden
+TZ;;Tanzania, United Republic of
+CD;;Congo
+GU;;Guam
+MM;;Myanmar
+DZ;;Aljeria
+MN;;Mongolia
+PK;;Pakistan
+SG;;Singapore
+VC;;Saint Vincent and the Grenadines
+CF;;Jamhuri ya Afrika ya Kati
+GW;;Guinea
+MO;;Macao
+PL;;Poland
+SH;;Saint Helena
+CG;;Congo
+MP;;Northern Mariana Islands
+PM;;Saint Pierre and Miquelon
+SI;;Slovenia
+VE;;Venezuela, Bolivarian republic of
+ZW;;Zimbabwe
+CH;;Switzerland
+GY;;Guyana
+MQ;;Martinique
+PN;;Pitcairn
+SJ;;Svalbard and Jan Mayen
+CI;;Côte dIvoireIvoire
+MR;;Mauritania
+SK;;Slovakia
+VG;;Virgin Islands, British
+MS;;Montserrat
+SL;;Sierra Leone
+CK;;Cook Islands
+ID;;Indonesia
+MT;;Malta
+SM;;San Marino
+VI;;Virgin Islands, U.S.
+YE;;Yemen
+CL;;Chile
+IE;;Ireland
+LA;;Lao Peoples Democratic Republics Democratic Republic
+MU;;Mauritius
+SN;;Senegal
+CM;;Cameroon
+FI;;Finland
+LB;;Lebanon
+MV;;Maldives
+PR;;Puerto Rico
+SO;;Somalia
+CN;;China
+FJ;;Fiji
+LC;;Saint Lucia
+MW;;Malawi
+PS;;Palestinian Territory, Occupied
+CO;;Colombia
+FK;;Falkland Islands (Malvinas)
+MX;;Mexico
+PT;;Portugal
+MY;;Malaysia
+SR;;Suriname
+VN;;Viet Nam
+FM;;Micronesia, Federated States of
+MZ;;Msumbiji
+CR;;Costa Rica
+PW;;Palau
+FO;;Faroe Islands
+ST;;Sao Tome and Principe
+IL;;Israel
+LI;;Liechtenstein
+PY;;Paraguay
+BA;;Bosnia na Herzegovina
+CU;;Cuba
+IM;;Isle of Man
+SV;;El Salvador
+CV;;Cape Verde
+FR;;Ufaransa
+IN;;India
+LK;;Sri Lanka
+BB;;Barbados
+IO;;u
+VU;;Vanuatu
+CX;;Kisiwa cha Christmas
+RE;;Reunion
+UA;;Ukraine
+SY;;Syrian Arab Republic
+CY;;Cyprus
+IQ;;Iraq
+SZ;;Swaziland
+BD;;Bangladesh
+CZ;;Czech Republic
+IR;;Iran, Islamic Republic of
+YT;;Mayotte
+BE;;Belgium
+IS;;Iceland
+BF;;Burkina Faso
+EC;;Ecuador
+IT;;Italy
+OM;;Oman
+BG;;Bulgaria
+BH;;Bahrain
+LR;;Liberia
+UG;;Uganda
+BI;;Burundi
+EE;;Estonia
+LS;;Lesotho
+BJ;;Benin
+LT;;Lithuania
+EG;;Egypt
+BL;;Saint Barthélemy
+EH;;Western Sahara
+LU;;Luxembourg
+RO;;Romania
+BM;;Bermuda
+LV;;Latvia
+BN;;Brunei Darussalam
+UM;;United States Minor Outlying Islands
+BO;;Bolivia, Plurinational State of
+KE;;Kenya
+NA;;Namibia
+LY;;Libyan Arab Jamahiriya
+BR;;Brazil
+KG;;Kyrgyzstan
+NC;;New Caledonia
+RS;;Serbia
+BS;;Bahama
+HK;;Hong Kong
+KH;;Cambodia
+BT;;Bhutan
+KI;;Kiribati
+NE;;Niger
+QA;;Qatar
+RU;;Russian Federation
+HM;;Heard Island and McDonald Islands
+NF;;Norfolk Island
+US;;United States
+BV;;Kisiwa cha Bouvet
+ER;;Eritrea
+HN;;Honduras
+NG;;Nigeria
+RW;;Rwanda
+BW;;Botswana
+ES;;Spain
+ET;;Ethiopia
+NI;;Nicaragua
+AD;;Andorra
+BY;;Belarus
+KM;;Comoros
+AE;;United Arab Emirates
+BZ;;Belize
+HR;;Croatia
+KN;;Saint Kitts and Nevis
+TC;;Turks and Caicos Islands
+AF;;Afghanistani
+NL;;Uholanzi
+TD;;Chad
+AG;;Antigua na Barbuda
+HT;;Haiti
+KP;;Korea, Democratic Peoples Republic ofs Republic of
+UY;;Uruguay
+GA;;Gabon
+HU;;Hungary
+TF;;French Southern Territories
+UZ;;Uzbekistan
+AI;;Anguilla
+DE;;Germany
+GB;;United Kingdom
+KR;;Korea, Republic of
+TG;;Togo
+NO;;Norway
+TH;;Thailand
+GD;;Grenada
+NP;;Nepal
+ZA;;South Africa
+AL;;Albania
+GE;;Georgia
+TJ;;Tajikistan
+WF;;Wallis and Futuna
+AM;;Armenia
+GF;;French Guiana
+NR;;Nauru
+TK;;Tokelau
+AN;;Netherlands Antilles
+DJ;;Djibouti
+KW;;Kuwait
+TL;;Timor-Leste
+AO;;Angola
+DK;;Denmark
+GG;;Guernsey
+TM;;Turkmenistan
+GH;;Ghana
+JE;;Jersey
+MA;;Morocco
+KY;;Visiwa vya Cayman
+NU;;Niue
+TN;;Tunisia
+DM;;Dominica
+GI;;Gibraltar
+KZ;;Kazakhstan
+TO;;Tonga
+AQ;;Antaktika
+MC;;Monaco
+AR;;Argentina
+MD;;Moldova
+AS;;Marekani ya Samoa
+DO;;Dominican Republic
+ME;;Montenegro
+PA;;Panama
+TR;;Turkey
+AT;;Austria
+GL;;Greenland
+MF;;Saint Martin (French part)
+NZ;;New Zealand
+AU;;Australia
+GM;;Gambia
+MG;;Madagascar
+GN;;Guinea
+AW;;Aruba
+MH;;Marshall Islands
+TT;;Trinidad and Tobago
+ZM;;Zambia
+GP;;Guadeloupe
+AX;;Visiwa vya Åland
+SA;;Saudi Arabia
+PE;;Peru
+JM;;Jamaica
+GQ;;Equatorial Guinea
+CA;;Canada
+WS;;Samoa
+SB;;Solomon Islands
+PF;;French Polynesia
+TV;;Tuvalu
+PG;;Guinea
+MK;;Macedonia, Republic of
+GR;;Greece
+AZ;;Azerbaijan
+TW;;China
+SC;;Seychelles
+PH;;Philippines
+ML;;Mali
+JO;;Jordan
+GS;;Georgia
+SD;;Sudan

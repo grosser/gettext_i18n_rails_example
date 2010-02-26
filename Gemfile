@@ -9,7 +9,7 @@ gem "fast_gettext", :version => '>= 0.5'
 gem "gettext", :require => false, :version => '>= 1.9.3'
 
 #this is needed for language/country translations
-gem "i18n_data", :require => 'i18n_data', :version => '>= 0.2.5'
+gem "i18n_data", :require => 'i18n_data', :version => '>= 0.2.6'
 
 group :test do
   gem "rspec"
