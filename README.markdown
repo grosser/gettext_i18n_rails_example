@@ -1,16 +1,21 @@
+Run it
+======
+    sudo gem install bundler
+    bundle install
+    rails server
+    visit http://localhost:3000
+
 How to repeat this setup
 ========================
- - `sudo gem install rails -s http://gems.rubyonrails.org`
- - add new model via ./script/generate scaffold car
- - rake db:migrate
- - follow instructions from [gettext_i18n_rails](http://github.com/grosser/gettext_i18n_rails)
+
+Follow instructions from [gettext_i18n_rails](http://github.com/grosser/gettext_i18n_rails)
 
 ###Find all translations
-translations used while testing (tests may crash if you do not have rspec+rspec-rails edge!)
+translations used while testing
     rake gettext:test_log
 translations for model names/attributes + thrugh gettext-ruby-parser
     rake gettext:find
 Convert them to FastGettext readable format
     rake gettext:pack
 
-You can see this app running: [online Demo](http://gettext-i18n-rails-example.heroku.com/)
+You can see this app running (rails 2.3 version) [online Demo](http://gettext-i18n-rails-example.heroku.com/)
