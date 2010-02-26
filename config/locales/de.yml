@@ -14,7 +14,7 @@ de:
     month_names: [~, Januar, Februar, März, April, Mai, Juni, Juli, August, September, Oktober, November, Dezember]
     abbr_month_names: [~, Jan, Feb, Mär, Apr, Mai, Jun, Jul, Aug, Sep, Okt, Nov, Dez]
     order: [ :day, :month, :year ]
-  
+
   time:
     formats:
       default: "%A, %e. %B %Y, %H:%M Uhr"
@@ -24,7 +24,7 @@ de:
 
     am: "vormittags"
     pm: "nachmittags"
-      
+
   datetime:
     distance_in_words:
       half_a_minute: 'eine halbe Minute'
@@ -60,7 +60,7 @@ de:
       over_x_years:
         one: 'mehr als 1 Jahr'
         other: 'mehr als {{count}} Jahre'
-      
+
   number:
     format:
       precision: 2
@@ -70,9 +70,9 @@ de:
       format:
         unit: '€'
         format: '%n%u'
-        separator: 
-        delimiter: 
-        precision: 
+        separator:
+        delimiter:
+        precision:
     percentage:
       format:
         delimiter: ""
@@ -90,7 +90,7 @@ de:
       two_words_connector: "und"
       last_word_connector: "und"
       sentence_connector: "und"
-        
+
   activerecord:
     errors:
       template:
@@ -127,3 +127,10 @@ de:
 
     models:
       car: 'Auto'
+
+  errors:
+    template:
+      header:
+        one:    "Konnte dieses {{model}} Objekt nicht speichern: 1 Fehler."
+        other:  "Konnte dieses {{model}} Objekt nicht speichern: {{count}} Fehler."
+      body: "Bitte überprüfen Sie die folgenden Felder:"
