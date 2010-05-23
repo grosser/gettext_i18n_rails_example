@@ -11,7 +11,8 @@ To use I18n calls define a `weir.rails.syntax.i.hate` translation.
 Setup
 =====
 ###Installation
-This plugin: `  script/plugin install git://github.com/grosser/gettext_i18n_rails.git  `
+As plugin: `  script/plugin install git://github.com/grosser/gettext_i18n_rails.git  `
+Or Gem: ` sudo gem install gettext_i18n_rails `
 
 [FastGettext](http://github.com/grosser/fast_gettext): `  sudo gem install fast_gettext  `
 
@@ -35,15 +36,12 @@ Copy default locales with dates/sentence-connectors/AR-errors you want from e.g.
 
     #config/initialisers/fast_gettext.rb
     FastGettext.add_text_domain 'app', :path => 'locale'
+    FastGettext.default_available_locales = ['en','de'] #all you want to allow
+    FastGettext.default_text_domain = 'app'
 
     #application_controller
     class ApplicationController < ...
       before_filter :set_gettext_locale
-      def set_gettext_locale
-        FastGettext.text_domain = 'app'
-        FastGettext.available_locales = ['en','de'] #all you want to allow
-        super
-      end
 
 Translating
 ===========
@@ -130,9 +128,11 @@ Sometimes translations like `_("x"+"u")` cannot be fond. You have 4 options:
  - add a Logger to a translation Chain, so every unfound translations is logged ([example]((http://github.com/grosser/fast_gettext)))
 
 
-Author
+Contributors
 ======
  - [ruby gettext extractor](http://github.com/retoo/ruby_gettext_extractor/tree/master) from [retoo](http://github.com/retoo)
+ - [Paul McMahon](http://github.com/pwim)
+ - [Duncan Mac-Vicar P](http://duncan.mac-vicar.com/blog/)
 
 [Michael Grosser](http://pragmatig.wordpress.com)  
 grosser.michael@gmail.com  
