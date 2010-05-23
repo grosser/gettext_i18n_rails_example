@@ -26,3 +26,4 @@ module GettextExampleRails
 end
 
 FastGettext.add_text_domain 'app', :path => File.join(Rails.root, 'locale')
+FastGettext.text_domain = 'app'
