@@ -13,7 +13,7 @@ namespace :gettext do
   desc "Update pot/po files."
   task :find do
     load_gettext
-    $LOAD_PATH << File.join(File.dirname(__FILE__),'..','lib')
+    $LOAD_PATH << File.join(File.dirname(__FILE__),'..','..','lib')
     require 'gettext_i18n_rails/haml_parser'
 
     if GetText.respond_to? :update_pofiles_org
@@ -64,10 +64,11 @@ namespace :gettext do
     require 'gettext_i18n_rails/model_attributes_finder'
     storage_file = 'locale/model_attributes.rb'
     puts "writing model translations to: #{storage_file}"
+    ignore_tables = [/^sitemap_/, /_versions$/, 'schema_migrations', 'sessions']
     GettextI18nRails.store_model_attributes(
-      :to=>storage_file,
-      :ignore_columns=>[/_id$/,'id','type','created_at','updated_at'],
-      :ignore_tables=>[/^sitemap_/,/_versions$/,'schema_migrations']
+      :to => storage_file,
+      :ignore_columns => [/_id$/, 'id', 'type', 'created_at', 'updated_at'],
+      :ignore_tables => ignore_tables
     )
   end
 end
