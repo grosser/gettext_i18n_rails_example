@@ -36,15 +36,12 @@ Copy default locales with dates/sentence-connectors/AR-errors you want from e.g.
 
     #config/initialisers/fast_gettext.rb
     FastGettext.add_text_domain 'app', :path => 'locale'
+    FastGettext.default_available_locales = ['en','de'] #all you want to allow
+    FastGettext.default_text_domain = 'app'
 
     #application_controller
     class ApplicationController < ...
       before_filter :set_gettext_locale
-      def set_gettext_locale
-        FastGettext.text_domain = 'app'
-        FastGettext.available_locales = ['en','de'] #all you want to allow
-        super
-      end
 
 Translating
 ===========
@@ -135,6 +132,7 @@ Contributors
 ======
  - [ruby gettext extractor](http://github.com/retoo/ruby_gettext_extractor/tree/master) from [retoo](http://github.com/retoo)
  - [Paul McMahon](http://github.com/pwim)
+ - [Duncan Mac-Vicar P](http://duncan.mac-vicar.com/blog/)
 
 [Michael Grosser](http://pragmatig.wordpress.com)  
 grosser.michael@gmail.com  
