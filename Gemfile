@@ -12,6 +12,6 @@ gem "gettext", '>= 1.9.3', :require => false
 gem "i18n_data", '>= 0.2.6', :require => 'i18n_data'
 
 group :test do
-  gem "rspec"
-  gem "rspec-rails"
+  gem 'rspec', '>= 2.0.0.beta.8'
+  gem 'rspec-rails', '>= 2.0.0.beta.8'
 end
