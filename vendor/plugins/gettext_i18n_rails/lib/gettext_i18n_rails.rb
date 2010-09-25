@@ -4,14 +4,19 @@ module GettextI18nRails
   extend self
 end
 
-begin
-  gem 'fast_gettext', '>=0.4.8'
-rescue LoadError
-  gem 'grosser-fast_gettext', '>=0.4.8'
+require 'fast_gettext'
+if Gem::Version.new(FastGettext::VERSION) < Gem::Version.new("0.4.8")
+  raise "Please upgrade fast_gettext"
 end
 
 # include translations into all the places it needs to go...
-Object.send(:include,FastGettext::Translation)
+Object.send(:include, FastGettext::Translation)
+
+# make translations html_safe if needed
+if "".respond_to?(:html_safe?)
+  require 'gettext_i18n_rails/html_safe_translations'
+  Object.send(:include, GettextI18nRails::HtmlSafeTranslations)
+end
 
 require 'gettext_i18n_rails/backend'
 I18n.backend = GettextI18nRails::Backend.new

@@ -4,7 +4,7 @@ Do all translations you want with FastGettext, use any other I18n backend as ext
 
 Rails does: `I18n.t('weir.rails.syntax.i.hate')`  
 We do: `_('Just translate my damn text!')`  
-To use I18n calls define a `weir.rails.syntax.i.hate` translation.  
+To use I18n calls define a `weir.rails.syntax.i.hate` translation.
 
 [See it working in the example application.](https://github.com/grosser/gettext_i18n_rails_example)
 
@@ -26,22 +26,44 @@ GetText 2.0 will render 1.93 unusable, so only install if you do not have apps t
 Copy default locales with dates/sentence-connectors/AR-errors you want from e.g.
 [rails i18n](http://github.com/svenfuchs/rails-i18n/tree/master/rails/locale/) into 'config/locales'
 
-    #environment.rb
+If you are not using bundler:
+
+    #config/environment.rb
     Rails::Initializer.run do |config|
       ...
-      config.gem "fast_gettext", :version => '~>0.4.17'
+      config.gem "fast_gettext", :version => '>=0.4.8'
       #only used for mo/po file generation in development, !do not load(:lib=>false), will needlessly eat ram!
       config.gem "gettext", :lib => false, :version => '>=1.9.3'
     end
+
+If you are using bundler:
+
+    #Gemfile
+    gem "fast_gettext", '>=0.4.8'
+    gem '>=1.9.3', "gettext", :require => false
+
+If you installed it as a gem add to your Rakefile
+
+    #Rakefile
+    begin
+      require "gettext_i18n_rails/tasks"
+    rescue LoadError
+      puts "gettext_i18n_rails is not installed, you probably should run 'rake gems:install' or 'bundle install'."
+    end
+
+To initialize:
 
     #config/initialisers/fast_gettext.rb
     FastGettext.add_text_domain 'app', :path => 'locale'
     FastGettext.default_available_locales = ['en','de'] #all you want to allow
     FastGettext.default_text_domain = 'app'
 
-    #application_controller
+And in your application:
+
+    #app/controllers/application_controller.rb
     class ApplicationController < ...
       before_filter :set_gettext_locale
+
 
 Translating
 ===========
@@ -132,8 +154,11 @@ Contributors
 ======
  - [ruby gettext extractor](http://github.com/retoo/ruby_gettext_extractor/tree/master) from [retoo](http://github.com/retoo)
  - [Paul McMahon](http://github.com/pwim)
- - [Duncan Mac-Vicar P](http://duncan.mac-vicar.com/blog/)
+ - [Duncan Mac-Vicar P](http://duncan.mac-vicar.com/blog)
+ - [Ramihajamalala Hery](http://my.rails-royce.org)
+ - [J. Pablo Fernández](http://pupeno.com)
+ - [Anh Hai Trinh](http://blog.onideas.ws)
 
 [Michael Grosser](http://pragmatig.wordpress.com)  
 grosser.michael@gmail.com  
-Hereby placed under public domain, do what you want, just do not hold me accountable...  
+Hereby placed under public domain, do what you want, just do not hold me accountable...
