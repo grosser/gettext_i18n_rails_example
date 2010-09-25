@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: version 0.0.1\n"
-"POT-Creation-Date: 2009-05-10 17:39+0200\n"
+"POT-Creation-Date: 2010-09-25 09:50+0200\n"
 "PO-Revision-Date: 2009-02-18 14:53+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,7 +21,7 @@ msgstr ""
 msgid "%{relative_time} ago"
 msgstr "%{relative_time} temu"
 
-#: app/views/cars/index.html.erb:15 locale/testlog_phrases.rb:2
+#: app/views/cars/index.html.erb:17 locale/testlog_phrases.rb:2
 msgid "Are you sure?"
 msgstr "Czy na pewno?"
 
@@ -32,8 +32,8 @@ msgstr[0] "oś"
 msgstr[1] "osie"
 msgstr[2] "osi"
 
-#: app/views/cars/show.html.erb:16 app/views/cars/edit.html.erb:12
-#: app/views/cars/new.html.erb:11
+#: app/views/cars/show.html.erb:16 app/views/cars/new.html.erb:11
+#: app/views/cars/edit.html.erb:12
 msgid "Back"
 msgstr "Powrót"
 
@@ -69,11 +69,11 @@ msgstr "Utwórz"
 msgid "Created"
 msgstr "Utworzone"
 
-#: app/views/cars/index.html.erb:15 locale/testlog_phrases.rb:3
+#: app/views/cars/index.html.erb:17 locale/testlog_phrases.rb:3
 msgid "Destroy"
 msgstr "Usuń"
 
-#: app/views/cars/show.html.erb:15 app/views/cars/index.html.erb:14
+#: app/views/cars/show.html.erb:15 app/views/cars/index.html.erb:16
 #: locale/testlog_phrases.rb:4
 msgid "Edit"
 msgstr "Zmień"
@@ -90,19 +90,15 @@ msgstr "Lista aut"
 msgid "Month"
 msgstr "Miesiąc"
 
-#: app/views/cars/index.html.erb:22 app/views/cars/new.html.erb:1
+#: app/views/cars/new.html.erb:1 app/views/cars/index.html.erb:24
 #: locale/testlog_phrases.rb:6
 msgid "New car"
 msgstr "Nowe auto"
 
-#: app/views/cars/edit.html.erb:11 app/views/cars/index.html.erb:13
+#: app/views/cars/index.html.erb:15 app/views/cars/edit.html.erb:11
 #: locale/testlog_phrases.rb:7
 msgid "Show"
 msgstr "Pokaż"
-
-#: app/views/cars/text.haml:1
-msgid "Translation from haml, [do not translate, just an example...]"
-msgstr ""
 
 #: app/views/cars/edit.html.erb:7
 msgid "Update"
@@ -117,8 +113,8 @@ msgstr ""
 msgid "car"
 msgstr "auto"
 
-#: app/views/cars/text.haml:2
-msgid "msgids with braces (like this) work too..."
+#: app/views/cars/index.html.erb:5
+msgid "test html_safe %{x}"
 msgstr ""
 
 #: locale/testlog_phrases.rb:8

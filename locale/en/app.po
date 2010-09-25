@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: version 0.0.1\n"
-"POT-Creation-Date: 2009-05-10 17:39+0200\n"
+"POT-Creation-Date: 2010-09-25 09:50+0200\n"
 "PO-Revision-Date: 2009-02-18 15:42+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,7 +20,7 @@ msgstr ""
 msgid "%{relative_time} ago"
 msgstr ""
 
-#: app/views/cars/index.html.erb:15 locale/testlog_phrases.rb:2
+#: app/views/cars/index.html.erb:17 locale/testlog_phrases.rb:2
 msgid "Are you sure?"
 msgstr ""
 
@@ -30,8 +30,8 @@ msgid_plural "Axis"
 msgstr[0] ""
 msgstr[1] ""
 
-#: app/views/cars/show.html.erb:16 app/views/cars/edit.html.erb:12
-#: app/views/cars/new.html.erb:11
+#: app/views/cars/show.html.erb:16 app/views/cars/new.html.erb:11
+#: app/views/cars/edit.html.erb:12
 msgid "Back"
 msgstr ""
 
@@ -67,11 +67,11 @@ msgstr ""
 msgid "Created"
 msgstr ""
 
-#: app/views/cars/index.html.erb:15 locale/testlog_phrases.rb:3
+#: app/views/cars/index.html.erb:17 locale/testlog_phrases.rb:3
 msgid "Destroy"
 msgstr ""
 
-#: app/views/cars/show.html.erb:15 app/views/cars/index.html.erb:14
+#: app/views/cars/show.html.erb:15 app/views/cars/index.html.erb:16
 #: locale/testlog_phrases.rb:4
 msgid "Edit"
 msgstr ""
@@ -88,18 +88,14 @@ msgstr ""
 msgid "Month"
 msgstr ""
 
-#: app/views/cars/index.html.erb:22 app/views/cars/new.html.erb:1
+#: app/views/cars/new.html.erb:1 app/views/cars/index.html.erb:24
 #: locale/testlog_phrases.rb:6
 msgid "New car"
 msgstr ""
 
-#: app/views/cars/edit.html.erb:11 app/views/cars/index.html.erb:13
+#: app/views/cars/index.html.erb:15 app/views/cars/edit.html.erb:11
 #: locale/testlog_phrases.rb:7
 msgid "Show"
-msgstr ""
-
-#: app/views/cars/text.haml:1
-msgid "Translation from haml, [do not translate, just an example...]"
 msgstr ""
 
 #: app/views/cars/edit.html.erb:7
@@ -114,9 +110,9 @@ msgstr "-- please choose a model or I will not continue!"
 msgid "car"
 msgstr ""
 
-#: app/views/cars/text.haml:2
-msgid "msgids with braces (like this) work too..."
-msgstr ""
+#: app/views/cars/index.html.erb:5
+msgid "test html_safe %{x}"
+msgstr "test <a href='/'>html_safe</a> %{x}"
 
 #: locale/testlog_phrases.rb:8
 msgid "this is a dynamic translation which was found thorugh gettext_test_log!"
