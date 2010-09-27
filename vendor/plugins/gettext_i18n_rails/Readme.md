@@ -26,23 +26,21 @@ GetText 2.0 will render 1.93 unusable, so only install if you do not have apps t
 Copy default locales with dates/sentence-connectors/AR-errors you want from e.g.
 [rails i18n](http://github.com/svenfuchs/rails-i18n/tree/master/rails/locale/) into 'config/locales'
 
-If you are not using bundler:
+Rails 2:
 
-    #config/environment.rb
-    Rails::Initializer.run do |config|
-      ...
-      config.gem "fast_gettext", :version => '>=0.4.8'
-      #only used for mo/po file generation in development, !do not load(:lib=>false), will needlessly eat ram!
-      config.gem "gettext", :lib => false, :version => '>=1.9.3'
-    end
+    # config/environment.rb
+    config.gem "fast_gettext", :version => '>=0.4.8'
 
-If you are using bundler:
+    # only needed for mo/po file generation in development
+    config.gem "gettext", :version => '>=1.9.3', :lib => false
 
-    #Gemfile
-    gem "fast_gettext", '>=0.4.8'
-    gem '>=1.9.3', "gettext", :require => false
+With bundler:
 
-If you installed it as a gem add to your Rakefile
+    # Gemfile
+    gem 'fast_gettext', '>=0.4.8'
+    gem 'gettext', '>=1.9.3', :require => false
+
+Installed as gem? Add to your Rakefile:
 
     #Rakefile
     begin
@@ -53,14 +51,14 @@ If you installed it as a gem add to your Rakefile
 
 To initialize:
 
-    #config/initialisers/fast_gettext.rb
+    # config/initializers/fast_gettext.rb
     FastGettext.add_text_domain 'app', :path => 'locale'
     FastGettext.default_available_locales = ['en','de'] #all you want to allow
     FastGettext.default_text_domain = 'app'
 
 And in your application:
 
-    #app/controllers/application_controller.rb
+    # app/controllers/application_controller.rb
     class ApplicationController < ...
       before_filter :set_gettext_locale
 
@@ -100,6 +98,13 @@ Car|Model means Model in namespace Car.
 You do not have to translate this into english "Model", if you use the
 namespace-aware translation
     s_('Car|Model') == 'Model' #when no translation was found
+
+XSS / html_safe
+===============
+If you trust your translators and all your usages of % on translations:  
+(% on string is atm buggy with always staying html_safe, no matter what was replaced)
+    # config/environment.rb
+    GettextI18nRails.translations_are_html_safe = true
 
 ActiveRecord - error messages
 =============================
@@ -149,6 +154,12 @@ Sometimes translations like `_("x"+"u")` cannot be fond. You have 4 options:
  - use the [gettext_test_log rails plugin ](http://github.com/grosser/gettext_test_log) to find all translations that where used while testing
  - add a Logger to a translation Chain, so every unfound translations is logged ([example]((http://github.com/grosser/fast_gettext)))
 
+
+TODO
+=====
+ - add Railtie for rake tasks on Rails 3
+ - fix % on string to respect html_safe: `("<a>%{x}</a>".html_safe % {:x=>'<script>y</script>'})` should escape the `<script>y</script>` part) 
+ - refactor Readme
 
 Contributors
 ======
