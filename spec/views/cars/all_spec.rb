@@ -1,8 +1,8 @@
 require "spec/spec_helper"
 
-describe 'cars' do
+describe 'cars/index' do
   it "renders index" do
-    assigns[:cars] = [create_valid(Car)]
-    render "cars/index"
+    @cars = [create_valid(Car)]
+    render
   end
 end
