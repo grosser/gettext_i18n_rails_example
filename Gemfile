@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem "rails", "3.0.0"
+gem "rails", ">=3"
 
 gem "sqlite3-ruby", :require => "sqlite3"
 gem "fast_gettext", '>= 0.5'
@@ -12,6 +12,6 @@ gem "gettext", '>= 1.9.3', :require => false
 gem "i18n_data", '>= 0.2.6', :require => 'i18n_data'
 
 group :test do
-  gem 'rspec', '>= 2.0.0.beta.22'
-  gem 'rspec-rails', '>= 2.0.0.beta.22'
+  gem 'rspec', '>=2'
+  gem 'rspec-rails', '>=2'
 end
