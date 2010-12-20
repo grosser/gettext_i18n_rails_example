@@ -6,7 +6,7 @@
 <%=f.text_field(:wheels_count)%>
 <br/>
 <%=f.label(:country,Car.human_attribute_name(:country))%>
-<%=f.select(:country,countries)%>
+<%=f.select(:country,[''] + countries)%>
 <br/>
 <%=f.label(:manual_language,Car.human_attribute_name(:manual_language))%>
 <%=f.select(:manual_language,languages)%>

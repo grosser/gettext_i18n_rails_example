@@ -7,10 +7,11 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: version 0.0.1\n"
-"POT-Creation-Date: 2010-09-25 09:50+0200\n"
+"POT-Creation-Date: 2010-12-20 19:43+0100\n"
 "PO-Revision-Date: 2009-02-18 14:53+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -109,6 +110,10 @@ msgstr "-- bitte such dir ein Model aus sonst geht das hier nicht weiter!"
 #: locale/model_attributes.rb:2
 msgid "car"
 msgstr "Auto"
+
+#: app/models/car.rb:5
+msgid "country should not be blank"
+msgstr "Land sollte nicht leer sein"
 
 #: app/views/cars/index.html.erb:5
 msgid "test html_safe %{x}"
