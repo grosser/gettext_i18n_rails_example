@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{gettext_i18n_rails}
-  s.version = "0.2.5"
+  s.version = "0.2.12"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Michael Grosser"]
-  s.date = %q{2010-09-27}
+  s.date = %q{2010-11-20}
   s.email = %q{grosser.michael@gmail.com}
   s.files = [
     ".gitignore",
@@ -26,6 +26,7 @@ Gem::Specification.new do |s|
      "lib/gettext_i18n_rails/html_safe_translations.rb",
      "lib/gettext_i18n_rails/i18n_hacks.rb",
      "lib/gettext_i18n_rails/model_attributes_finder.rb",
+     "lib/gettext_i18n_rails/railtie.rb",
      "lib/gettext_i18n_rails/ruby_gettext_extractor.rb",
      "lib/gettext_i18n_rails/tasks.rb",
      "lib/tasks/gettext_rails_i18n.rake",
