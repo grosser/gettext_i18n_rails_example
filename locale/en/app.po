@@ -112,7 +112,7 @@ msgid "car"
 msgstr ""
 
 #: app/models/car.rb:5
-msgid "country should not be blank"
+msgid "country|should not be blank"
 msgstr ""
 
 #: app/views/cars/index.html.erb:5
