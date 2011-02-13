@@ -48,41 +48,49 @@ pl:
     distance_in_words:
       half_a_minute: "pół minuty"
       less_than_x_seconds:
-        one:   "mniej niż sekundę"
-        few:   "mniej niż %{count} sekundy"
+        one: "mniej niż sekundę"
+        few: "mniej niż %{count} sekundy"
         other: "mniej niż %{count} sekund"
       x_seconds:
-        one:   "sekundę"
-        few:   "%{count} sekundy"
+        one: "1 sekunda"
+        few: "%{count} sekundy"
         other: "%{count} sekund"
       less_than_x_minutes:
-        one:   "mniej niż minutę"
-        few:   "mniej niż %{count} minuty"
+        one: "mniej niż minutę"
+        few: "mniej niż %{count} minuty"
         other: "mniej niż %{count} minut"
       x_minutes:
-        one:   "minutę"
-        few:   "%{count} minuty"
+        one: "1 minuta"
+        few: "%{count} minuty"
         other: "%{count} minut"
       about_x_hours:
-        one:   "około godziny"
-        other: "about %{count} godzin"
+        one: "około godziny"
+        few: "około %{count} godziny"
+        other: "około %{count} godzin"
       x_days:
-        one:   "1 dzień"
+        one: "1 dzień"
+        few: "%{count} dni"
         other: "%{count} dni"
       about_x_months:
-        one:   "około miesiąca"
+        one: "około miesiąca"
+        few: "około %{count} miesiące"
         other: "około %{count} miesięcy"
       x_months:
-        one:   "1 miesiąc"
-        few:   "%{count} miesiące"
+        one: "1 miesiąc"
+        few: "%{count} miesiące"
         other: "%{count} miesięcy"
       about_x_years:
-        one:   "około roku"
+        one: "około rok"
+        few: "około %{count} lata"
         other: "około %{count} lat"
       over_x_years:
-        one:   "ponad rok"
-        few:   "ponad %{count} lata"
+        one: "ponad rok"
+        few: "ponad %{count} lata"
         other: "ponad %{count} lat"
+      almost_x_years:
+        one: "prawie rok"
+        few: "prawie %{count} lata"
+        other: "prawie %{count} lat"
 
   activerecord:
     errors:
