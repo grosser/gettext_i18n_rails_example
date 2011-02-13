@@ -46,7 +46,7 @@ module GettextI18nRails
     end
 
     def interpolate(string, values)
-      reserved_keys = if defined?(I18n::RESERVED_KEYS)
+      reserved_keys = if defined?(I18n::RESERVED_KEYS) # rails 3+
         I18n::RESERVED_KEYS
       else
         I18n::Backend::Base::RESERVED_KEYS
