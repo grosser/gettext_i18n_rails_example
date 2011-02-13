@@ -1,3 +1,15 @@
+Rails 2 - gettext_i18n_rails example
+====================================
+
+[Rails 3 version](https://github.com/grosser/gettext_i18n_rails_example)
+
+Run it
+======
+    sudo gem install bundler
+    bundle install
+    ./script/server
+    visit http://localhost:3000
+
 How to repeat this setup
 ========================
  - `sudo gem install rails -s http://gems.rubyonrails.org`
@@ -14,3 +26,10 @@ Convert them to FastGettext readable format
     rake gettext:pack
 
 You can see this app running: [online Demo](http://gettext-i18n-rails-example.heroku.com/)
+
+
+Author
+======
+[Michael Grosser](http://grosser.it)<br/>
+michael@grosser.it<br/>
+Hereby placed under public domain, do what you want, just do not hold me accountable...
