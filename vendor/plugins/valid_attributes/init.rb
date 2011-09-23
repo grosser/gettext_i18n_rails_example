@@ -1,3 +1,1 @@
-if RAILS_ENV == 'test'
-  require File.join(File.dirname(__FILE__),'lib','valid_attributes')
-end
+require 'valid_attributes' if Rails.env == 'test'

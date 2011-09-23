@@ -57,7 +57,7 @@ class ValidAttributesHelper
 
   def self.path_to_valid_yml
     %w[test spec].each do |folder|
-      file = File.join(RAILS_ROOT,folder,'valid_attributes.yml')
+      file = File.join(Rails.root, folder, 'valid_attributes.yml')
       return file if File.exist?(file)
     end
     raise "create valid_attributes.yml in test/ or spec/"
