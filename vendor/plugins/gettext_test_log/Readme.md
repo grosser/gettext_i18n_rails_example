@@ -15,7 +15,7 @@ This will only work with [FastGettext](http://github.com/grosser/fast_gettext) a
 
 Install
 =======
- - `script/plugin install git://github.com/grosser/gettext_test_log.git `
+ - `rails plugin install git://github.com/grosser/gettext_test_log.git `
  - Gem: `sudo gem install grosser-gettext_test_log -s http://gems.github.com/`
 
 Usage
@@ -64,6 +64,6 @@ TODO
 
 Author
 ======
-Michael Grosser  
-grosser.michael@gmail.com  
-Hereby placed under public domain, do what you want, just do not hold me accountable...  
+[Michael Grosser](http://grosser.it)<br/>
+michael@grosser.it<br/>
+Hereby placed under public domain, do what you want, just do not hold me accountable...

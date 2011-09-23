@@ -1,1 +1,1 @@
-require 'gettext_test_log' if RAILS_ENV=='test'
+require 'gettext_test_log' if Rails.env.test?
