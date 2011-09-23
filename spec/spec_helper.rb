@@ -6,7 +6,7 @@ FastGettext.silence_errors
 
 GettextTestLog::activate_test_logging
 
-Rspec.configure do |config|
+RSpec.configure do |config|
   # If you're not using ActiveRecord you should remove these
   # lines, delete config/database.yml and disable :active_record
   # in your config/boot.rb

@@ -1,4 +1,4 @@
-GettextExampleRails::Application.routes.draw do |map|
+GettextExampleRails::Application.routes.draw do
   resources :cars
   root :to => "cars#index"
 end

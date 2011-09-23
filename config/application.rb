@@ -22,6 +22,7 @@ module GettextExampleRails
 
     # Configure sensitive parameters which will be filtered from the log file.
     config.filter_parameters << :password
+    config.secret_token = 'c576773a86e20c6e4f18454dd1a7f16965eff49609a7e5bd05c6cb1bc4ae753e0c86fe978c928d8d4d72d5868f5fa19e7fc782d4c3938c37abf1ac7ebdf91e57'
   end
 end
 
