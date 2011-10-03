@@ -5,13 +5,15 @@
 
 Gem::Specification.new do |s|
   s.name = %q{gettext_i18n_rails}
-  s.version = "0.2.16"
+  s.version = "0.3.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Michael Grosser"]
-  s.date = %q{2011-02-12}
+  s.date = %q{2011-09-25}
   s.email = %q{grosser.michael@gmail.com}
   s.files = [
+    "Gemfile",
+    "Gemfile.lock",
     "Rakefile",
     "Readme.md",
     "VERSION",
@@ -39,16 +41,8 @@ Gem::Specification.new do |s|
   ]
   s.homepage = %q{http://github.com/grosser/gettext_i18n_rails}
   s.require_paths = ["lib"]
-  s.rubygems_version = %q{1.4.2}
+  s.rubygems_version = %q{1.6.2}
   s.summary = %q{Simple FastGettext Rails integration.}
-  s.test_files = [
-    "spec/gettext_i18n_rails/action_controller_spec.rb",
-    "spec/gettext_i18n_rails/active_record_spec.rb",
-    "spec/gettext_i18n_rails/backend_spec.rb",
-    "spec/gettext_i18n_rails/string_interpolate_fix_spec.rb",
-    "spec/gettext_i18n_rails_spec.rb",
-    "spec/spec_helper.rb"
-  ]
 
   if s.respond_to? :specification_version then
     s.specification_version = 3
