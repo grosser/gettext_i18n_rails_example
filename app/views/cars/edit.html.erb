@@ -1,6 +1,6 @@
 <h1><%=_('Editing car')%></h1>
 
-<% form_for(@car) do |f| %>
+<%= form_for(@car) do |f| %>
   <%= f.error_messages %>
   <%= render 'form', :f=>f%>
   <p>

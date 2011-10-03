@@ -1,22 +1,23 @@
 <h1><%=_('Listing cars')%></h1>
-<%x='this is a dynamic translation which was found thorugh gettext_test_log!'%>
+<%x='this is a dynamic translation which was found through gettext_test_log!'%>
 <%=_(x)%>
 
 <%= _('test html_safe %{x}') %{:x => link_to('x', '/')} %>
 
 <table>
-  <tr>
-  </tr>
+  <tr></tr>
 
-<% for car in @cars %>
-  <tr>
-    <td><%= car.model %></td>
-    <td><%= car.wheels_count %></td>
-    <td><%= link_to _('Show'), car %></td>
-    <td><%= link_to _('Edit'), edit_car_path(car) %></td>
-    <td><%= link_to _('Destroy'), car, :confirm => _('Are you sure?'), :method => :delete %></td>
-  </tr>
-<% end %>
+  <% @cars.each do |car| %>
+    <tr>
+      <td><%= car.model %></td>
+      <td><%= car.wheels_count %></td>
+      <% axis = car.wheels_count / 2 %>
+      <td><%= axis %> <%= n_('Axis','Axis', axis) %></td>
+      <td><%= link_to _('Show'), car %></td>
+      <td><%= link_to _('Edit'), edit_car_path(car) %></td>
+      <td><%= link_to _('Destroy'), car, :confirm => _('Are you sure?'), :method => :delete %></td>
+    </tr>
+  <% end %>
 </table>
 
 <br />
