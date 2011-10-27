@@ -1,4 +1,4 @@
-source 'http://rubygems.org'
+source :rubygems
 
 gem "rails", "~>3.1.0"
 
@@ -9,7 +9,7 @@ gem "fast_gettext", '>= 0.5'
 gem "gettext", '>= 1.9.3', :require => false
 
 #this is needed for language/country translations
-gem "i18n_data", '>= 0.2.6', :require => 'i18n_data'
+gem "countries_and_languages", '>=0.1.2', :require => 'countries_and_languages/rails'
 
 group :test do
   gem 'rspec', '>=2'
