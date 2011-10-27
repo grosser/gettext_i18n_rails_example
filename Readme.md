@@ -5,9 +5,10 @@ Rails 3 - gettext_i18n_rails example
 
 Run it
 ======
-    sudo gem install bundler
+    gem install bundler
     bundle install
-    rails server
+    bundle exec rake db:migrate
+    bundle exec rails server
     visit http://localhost:3000
 
 How to repeat this setup
