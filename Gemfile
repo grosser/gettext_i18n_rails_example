@@ -1,6 +1,6 @@
 # include at least one source and the rails gem
 source :rubygems
-gem 'rails', '2.3.12', :require => nil
+gem 'rails', '2.3.14', :require => nil
 gem 'sqlite3-ruby', :require => 'sqlite3'
 gem 'fast_gettext', '>=0.4.8'
 gem 'rdoc'
