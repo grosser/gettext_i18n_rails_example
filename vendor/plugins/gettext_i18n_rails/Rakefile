@@ -1,11 +1,11 @@
-require "rspec/core/rake_task"
-RSpec::Core::RakeTask.new(:spec) do |t|
-  t.rspec_opts = '--backtrace --color'
+task :spec do
+  sh "rspec spec"
 end
-  
+
 task :default do
-  puts `rake spec VERSION=2.3.10 RSPEC_COLOR=1`
-  puts `rake spec VERSION=3.0.3 RSPEC_COLOR=1`
+  sh "RAILS=2.3.14 && (bundle || bundle install) && bundle exec rake spec"
+  sh "RAILS=3.0.9 && (bundle || bundle install) && bundle exec rake spec"
+  sh "RAILS=3.1.0 && (bundle || bundle install) && bundle exec rake spec"
 end
 
 begin
@@ -16,7 +16,6 @@ begin
     gem.email = "grosser.michael@gmail.com"
     gem.homepage = "http://github.com/grosser/#{gem.name}"
     gem.authors = ["Michael Grosser"]
-    gem.add_dependency 'fast_gettext'
   end
 
   Jeweler::GemcutterTasks.new
