@@ -1,3 +1,6 @@
+# encoding: UTF-8
+require 'i18n_data'
+
 module CountriesAndLanguages
   extend self
 
@@ -39,7 +42,7 @@ module CountriesAndLanguages
   end
 
   def convert_umlaut_to_base(input)
-    $KCODE='u'
+    $KCODE='u' if RUBY_VERSION < '1.9'
     %w(aáä AÁÄÅ oóö OÓÖ ií IÍ uúü UÚÜ eé EÉ sß).inject(input.dup) do |input, set|
       to, *from = set.split('')
       input.gsub(/[#{from}]/, to)
