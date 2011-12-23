@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: version 0.0.1\n"
-"POT-Creation-Date: 2010-12-20 19:43+0100\n"
+"POT-Creation-Date: 2011-12-23 08:52+0100\n"
 "PO-Revision-Date: 2009-02-18 14:53+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,115 +15,82 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n%10>=2 && n%10<=4 && (n%100<10 "
-"|| n%100>=20)) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20)) ? 1 : 2;\n"
 
-#: app/helpers/translation_helper.rb:3
 msgid "%{relative_time} ago"
 msgstr "%{relative_time} temu"
 
-#: app/views/cars/index.html.erb:17 locale/testlog_phrases.rb:2
 msgid "Are you sure?"
 msgstr "Czy na pewno?"
 
-#: app/views/cars/show.html.erb:5
 msgid "Axis"
 msgid_plural "Axis"
 msgstr[0] "oś"
 msgstr[1] "osie"
 msgstr[2] "osi"
 
-#: app/views/cars/show.html.erb:16 app/views/cars/new.html.erb:11
-#: app/views/cars/edit.html.erb:12
 msgid "Back"
 msgstr "Powrót"
 
-#: app/controllers/cars_controller.rb:47
 msgid "Car was successfully created."
 msgstr "Auto zostało pomyślnie utworzone."
 
-#: app/controllers/cars_controller.rb:64
 msgid "Car was successfully updated."
 msgstr "Auto zostało pomyślnie zapisane."
 
-#: app/views/cars/show.html.erb:7 locale/model_attributes.rb:4
 msgid "Car|Country"
 msgstr "Kraj"
 
-#: app/views/cars/show.html.erb:9 locale/model_attributes.rb:5
 msgid "Car|Manual language"
 msgstr "Język instrukcji obsługi"
 
-#: app/views/cars/show.html.erb:1 locale/model_attributes.rb:3
 msgid "Car|Model"
 msgstr "Model"
 
-#: app/views/cars/show.html.erb:3 locale/model_attributes.rb:6
 msgid "Car|Wheels count"
 msgstr "Liczba kół"
 
-#: app/views/cars/new.html.erb:7
 msgid "Create"
 msgstr "Utwórz"
 
-#: app/views/cars/show.html.erb:11
 msgid "Created"
 msgstr "Utworzone"
 
-#: app/views/cars/index.html.erb:17 locale/testlog_phrases.rb:3
 msgid "Destroy"
 msgstr "Usuń"
 
-#: app/views/cars/show.html.erb:15 app/views/cars/index.html.erb:16
-#: locale/testlog_phrases.rb:4
 msgid "Edit"
 msgstr "Zmień"
 
-#: app/views/cars/edit.html.erb:1
 msgid "Editing car"
 msgstr "Edycja auta"
 
-#: app/views/cars/index.html.erb:1 locale/testlog_phrases.rb:5
 msgid "Listing cars"
 msgstr "Lista aut"
 
-#: app/views/cars/show.html.erb:13
 msgid "Month"
 msgstr "Miesiąc"
 
-#: app/views/cars/new.html.erb:1 app/views/cars/index.html.erb:24
-#: locale/testlog_phrases.rb:6
 msgid "New car"
 msgstr "Nowe auto"
 
-#: app/views/cars/index.html.erb:15 app/views/cars/edit.html.erb:11
-#: locale/testlog_phrases.rb:7
 msgid "Show"
 msgstr "Pokaż"
 
-#: app/views/cars/edit.html.erb:7
 msgid "Update"
 msgstr "Aktualizuj"
 
-#: app/models/car.rb:2
 msgid "activerecord.errors.models.car.attributes.model.blank"
-msgstr ""
-"sorry my polish is bad :D but the point is that this is a I18n translation..."
+msgstr "sorry my polish is bad :D but the point is that this is a I18n translation..."
 
-#: locale/model_attributes.rb:2
 msgid "car"
 msgstr "auto"
 
-#: app/models/car.rb:5
 msgid "country|should not be blank"
 msgstr "i dont know polish, but this is enough to test it :D"
 
-#: app/views/cars/index.html.erb:5
 msgid "test html_safe %{x}"
 msgstr ""
 
-#: locale/testlog_phrases.rb:8
 msgid "this is a dynamic translation which was found thorugh gettext_test_log!"
-msgstr ""
-"to jest tłumaczenie dynamiczne, które zostało znalezione przez "
-"gettext_test_log!"
+msgstr "to jest tłumaczenie dynamiczne, które zostało znalezione przez gettext_test_log!"
