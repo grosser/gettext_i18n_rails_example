@@ -28,6 +28,10 @@ You can see this app running (rails 2.3 version) [online Demo](http://gettext-i1
 
 Author
 ======
+
+### [Contributors](http://github.com/grosser/gettext_i18n_rails_example/contributors)
+ - [Karel Ledru-Mathé](https://github.com/karellm)
+
 [Michael Grosser](http://grosser.it)<br/>
 michael@grosser.it<br/>
 Hereby placed under public domain, do what you want, just do not hold me accountable...
