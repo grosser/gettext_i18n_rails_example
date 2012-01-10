@@ -11,6 +11,11 @@ gem "gettext", '>= 1.9.3', :require => false
 #this is needed for language/country translations
 gem "countries_and_languages", '>=0.1.2', :require => 'countries_and_languages/rails'
 
+#templating engines
+gem "haml"
+gem "ruby_parser", :require => false
+gem "slim"
+
 group :test do
   gem 'rspec', '>=2'
   gem 'rspec-rails', '>=2'
