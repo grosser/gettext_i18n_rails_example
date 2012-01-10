@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <title>Templating engine: <%= controller.action_name %></title>
+</head>
+<body>
+
+<p style="color: green"><%= flash[:notice] %></p>
+
+<p>
+<%  for name, locale in [['Deutsch ?',:de],['English ?',:en],['Polski ?',:pl]] %>
+  <%=link_to(name,current_url(:locale=>locale))%>
+<% end %>
+----
+I18n Locale: <%=I18n.locale%> ---- Gettext Locale: <%=FastGettext.locale%>
+</p>
+<p>
+  <%= link_to "haml", haml_path %> | <%= link_to "slim", slim_path %>
+</p>
+
+<%= yield  %>
+
+</body>
+</html>

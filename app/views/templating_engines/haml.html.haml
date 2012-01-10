@@ -1,0 +1,7 @@
+%p= _('This paragraph is rendered using the _() method in a haml view.')
+
+%p= s_('haml|This paragraph is rendered using the s_() method under the namespace "haml" in a haml view.')
+
+%p= n_('This paragraph is rendered using the n_() method in a haml view.', 'These texts are rendered using the n_() method in a haml view.', 1)
+
+%p= n_('This paragraph is rendered using the n_() method in a haml view.', 'These paragraphs are rendered using the n_() method in a haml view.', 2)
