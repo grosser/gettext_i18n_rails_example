@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: version 0.0.1\n"
-"POT-Creation-Date: 2011-12-23 08:52+0100\n"
+"POT-Creation-Date: 2012-01-10 07:51-0800\n"
 "PO-Revision-Date: 2009-02-18 14:53+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -77,6 +77,27 @@ msgstr "Nowe auto"
 msgid "Show"
 msgstr "Pokaż"
 
+msgid "This paragraph is rendered using the _() method in a haml view."
+msgstr ""
+
+msgid "This paragraph is rendered using the _() method in a slim view."
+msgstr ""
+
+msgid "This paragraph is rendered using the n_() method in a haml view."
+msgid_plural "These texts are rendered using the n_() method in a haml view."
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+msgid "This paragraph is rendered using the n_() method in a slim view."
+msgid_plural "These texts are rendered using the n_() method in a slim view."
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+msgid "Translation from haml, [do not translate, just an example...]"
+msgstr ""
+
 msgid "Update"
 msgstr "Aktualizuj"
 
@@ -88,6 +109,15 @@ msgstr "auto"
 
 msgid "country|should not be blank"
 msgstr "i dont know polish, but this is enough to test it :D"
+
+msgid "haml|This paragraph is rendered using the s_() method under the namespace \"haml\" in a haml view."
+msgstr ""
+
+msgid "msgids with braces (like this) work too..."
+msgstr ""
+
+msgid "slim|This paragraph is rendered using the s_() method under the namespace \"slim\" in a slim view."
+msgstr ""
 
 msgid "test html_safe %{x}"
 msgstr ""
