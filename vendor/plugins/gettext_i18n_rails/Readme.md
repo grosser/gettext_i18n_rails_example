@@ -27,9 +27,13 @@ Setup
     gem 'gettext_i18n_rails'
 
 ##### Optional:
-If you want to find translations or build .mo files
+Add `gettext` if you want to find translations or build .mo files<br/>
+Add `ruby_parser` if you want to find translations inside haml files
+
+
     # Gemfile
     gem 'gettext', '>=1.9.3', :require => false, :group => :development
+    gem 'ruby_parser', :require => false, :group => :development
 
 #### Rails 2
 
@@ -189,13 +193,13 @@ When you run
 
     rake gettext:find
 
-by default the following files are going to be scanned for translations: {app,lib,config,locale}/**/*.{rb,erb,haml}. If
+by default the following files are going to be scanned for translations: {app,lib,config,locale}/**/*.{rb,erb,haml,slim}. If
 you want to specify a different list, you can redefine files_to_translate in the gettext namespace in a file like
 lib/tasks/gettext.rake:
 
     namespace :gettext do
       def files_to_translate
-        Dir.glob("{app,lib,config,locale}/**/*.{rb,erb,haml,rhtml}")
+        Dir.glob("{app,lib,config,locale}/**/*.{rb,erb,haml,slim,rhtml}")
       end
     end
 
