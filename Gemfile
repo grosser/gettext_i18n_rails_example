@@ -2,7 +2,7 @@ source :rubygems
 
 gem "rails", "~>3.1.0"
 
-gem "sqlite3-ruby", :require => "sqlite3"
+gem "sqlite3"
 gem "fast_gettext", '>= 0.5'
 
 #only used for mo/po file generation in development, !do not load(:lib=>false)! since it will only eat 7mb ram
