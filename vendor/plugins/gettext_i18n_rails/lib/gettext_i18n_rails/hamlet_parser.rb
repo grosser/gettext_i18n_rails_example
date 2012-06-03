@@ -1,15 +1,16 @@
 require 'gettext_i18n_rails/base_parser'
 
 module GettextI18nRails
-  class SlimParser < BaseParser
+  class HamletParser < BaseParser
     def self.extension
-      "slim"
+      "hamlet"
     end
 
     def self.convert_to_code(text)
-      Slim::Engine.new.call(text)
+      Hamlet::Engine.new.call(text)
     end
   end
 end
 
-GetText::RGetText.add_parser(GettextI18nRails::SlimParser)
+GetText::RGetText.add_parser(GettextI18nRails::HamletParser)
+

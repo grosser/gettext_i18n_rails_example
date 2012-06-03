@@ -28,7 +28,7 @@ Setup
 
 ##### Optional:
 Add `gettext` if you want to find translations or build .mo files<br/>
-Add `ruby_parser` if you want to find translations inside haml files
+Add `ruby_parser` if you want to find translations inside haml/slim/hamlet files (does not support ruby 1.9 syntax)
 
 
     # Gemfile
@@ -216,6 +216,11 @@ lib/tasks/gettext.rake:
  - [Ben Tucker](http://btucker.net/)
  - [Kamil Śliwak](https://github.com/cameel)
  - [Paul McMahon](https://github.com/pwim)
+ - [Rainux Luo](https://github.com/rainux)
+ - [Lucas Hills](https://github.com/2potatocakes)
+ - [Ladislav Slezák](https://github.com/lslezak)
+ - [Greg Weber](https://github.com/gregwebs)
+ - [Sean Kirby](https://github.com/sskirby)
 
 [Michael Grosser](http://grosser.it)<br/>
 grosser.michael@gmail.com<br/>

@@ -1,36 +1,6 @@
 # coding: utf-8
 require "spec_helper"
 
-FastGettext.silence_errors
-
-ActiveRecord::Base.establish_connection({
-  :adapter => "sqlite3",
-  :database => ":memory:",
-})
-
-ActiveRecord::Schema.define(:version => 1) do
-  create_table :car_seats, :force=>true do |t|
-    t.string :seat_color
-  end
-
-  create_table :parts, :force=>true do |t|
-    t.string :name
-    t.references :car_seat
-  end
-end
-
-ActiveRecord::Base.extend GettextI18nRails::ActiveRecord
-
-class CarSeat < ActiveRecord::Base
-  validates_presence_of :seat_color, :message=>"translate me"
-  has_many :parts
-  accepts_nested_attributes_for :parts
-end
-
-class Part < ActiveRecord::Base
-  belongs_to :car_seat
-end
-
 describe ActiveRecord::Base do
   before do
     FastGettext.current_cache = {}
@@ -38,7 +8,7 @@ describe ActiveRecord::Base do
 
   describe :human_name do
     it "is translated through FastGettext" do
-      CarSeat.should_receive(:_).with('car seat').and_return('Autositz')
+      CarSeat.should_receive(:_).with('Car seat').and_return('Autositz')
       CarSeat.human_name.should == 'Autositz'
     end
   end
@@ -52,6 +22,12 @@ describe ActiveRecord::Base do
     it "translates nested attributes through FastGettext" do
       CarSeat.should_receive(:s_).with('CarSeat|Parts|Name').and_return('Handle')
       CarSeat.human_attribute_name(:"parts.name").should == 'Handle'
+    end
+  end
+
+  describe :gettext_translation_for_attribute_name do
+    it "translates foreign keys to model name keys" do
+      Part.gettext_translation_for_attribute_name(:car_seat_id).should == 'Car seat'
     end
   end
 

@@ -16,6 +16,7 @@ namespace :gettext do
     $LOAD_PATH << File.join(File.dirname(__FILE__),'..','..','lib')
     require 'gettext_i18n_rails/haml_parser'
     require 'gettext_i18n_rails/slim_parser'
+    require 'gettext_i18n_rails/hamlet_parser'
 
 
     if GetText.respond_to? :update_pofiles_org
@@ -112,7 +113,7 @@ namespace :gettext do
   def locale_path
     FastGettext.translation_repositories[text_domain].instance_variable_get(:@options)[:path]
   rescue
-    File.join(RAILS_ROOT, "locale")
+    File.join(Rails.root, "locale")
   end
 
   def text_domain
