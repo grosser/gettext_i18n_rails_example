@@ -26,6 +26,11 @@ Convert them to FastGettext readable format
 
 You can see this app running (rails 2.3 version) [online Demo](http://gettext-i18n-rails-example.heroku.com/)
 
+TODO
+====
+ - link to templating engines
+ - cleanup html head
+
 Author
 ======
 

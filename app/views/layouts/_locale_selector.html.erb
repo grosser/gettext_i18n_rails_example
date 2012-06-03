@@ -1,0 +1,7 @@
+<p>
+  <% [['Deutsch ?',:de], ['English ?',:en], ["Pirate ?", :"en-PR"], ['Polski ?',:pl]].each do |name, locale| %>
+    <%= link_to name, current_url(:locale => locale) %>
+  <% end %>
+  ----
+  I18n Locale: <%=I18n.locale%> ---- Gettext Locale: <%=FastGettext.locale%>
+</p>

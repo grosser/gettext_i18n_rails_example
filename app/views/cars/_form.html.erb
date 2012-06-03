@@ -5,8 +5,12 @@
 <%=f.label(:wheels_count,Car.human_attribute_name(:wheels_count))%>
 <%=f.text_field(:wheels_count)%>
 <br/>
-<%=f.label(:country,Car.human_attribute_name(:country))%>
-<%=f.select(:country,[''] + countries)%>
-<br/>
-<%=f.label(:manual_language,Car.human_attribute_name(:manual_language))%>
-<%=f.select(:manual_language,languages)%>
+
+<% locale = (I18n.locale == :"en-PR" ? :en : I18n.locale) %>
+<% I18n.with_locale locale do %>
+  <%=f.label(:country,Car.human_attribute_name(:country))%>
+  <%=f.select(:country,[''] + countries)%>
+  <br/>
+  <%=f.label(:manual_language,Car.human_attribute_name(:manual_language))%>
+  <%=f.select(:manual_language,languages)%>
+<% end %>

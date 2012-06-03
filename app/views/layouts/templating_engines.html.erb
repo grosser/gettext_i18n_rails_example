@@ -10,13 +10,7 @@
 
 <p style="color: green"><%= flash[:notice] %></p>
 
-<p>
-<%  for name, locale in [['Deutsch ?',:de],['English ?',:en],['Polski ?',:pl]] %>
-  <%=link_to(name,current_url(:locale=>locale))%>
-<% end %>
-----
-I18n Locale: <%=I18n.locale%> ---- Gettext Locale: <%=FastGettext.locale%>
-</p>
+<%= render "layouts/locale_selector" %>
 <p>
   <%= link_to "haml", haml_path %> | <%= link_to "slim", slim_path %>
 </p>

@@ -1,0 +1,123 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: version 0.0.1\n"
+"POT-Creation-Date: 2012-01-10 07:51-0800\n"
+"PO-Revision-Date: 2009-02-18 15:42+0100\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+msgid "%{relative_time} ago"
+msgstr ""
+
+msgid "Are you sure?"
+msgstr "Arrrr, you sure"
+
+msgid "Axis"
+msgid_plural "Axis"
+msgstr[0] ""
+msgstr[1] ""
+
+msgid "Back"
+msgstr ""
+
+msgid "Car was successfully created."
+msgstr "Carrrrr was successfully created."
+
+msgid "Car was successfully updated."
+msgstr "Carrrr was successfully updated."
+
+msgid "Car|Country"
+msgstr ""
+
+msgid "Car|Manual language"
+msgstr ""
+
+msgid "Car|Model"
+msgstr ""
+
+msgid "Car|Wheels count"
+msgstr ""
+
+msgid "Create"
+msgstr ""
+
+msgid "Created"
+msgstr ""
+
+msgid "Destroy"
+msgstr "Demolish"
+
+msgid "Edit"
+msgstr "Change"
+
+msgid "Editing car"
+msgstr ""
+
+msgid "Listing cars"
+msgstr "Showing you all the cars"
+
+msgid "Month"
+msgstr ""
+
+msgid "New car"
+msgstr ""
+
+msgid "Show"
+msgstr "Display"
+
+msgid "This paragraph is rendered using the _() method in a haml view."
+msgstr ""
+
+msgid "This paragraph is rendered using the _() method in a slim view."
+msgstr ""
+
+msgid "This paragraph is rendered using the n_() method in a haml view."
+msgid_plural "These texts are rendered using the n_() method in a haml view."
+msgstr[0] ""
+msgstr[1] ""
+
+msgid "This paragraph is rendered using the n_() method in a slim view."
+msgid_plural "These texts are rendered using the n_() method in a slim view."
+msgstr[0] ""
+msgstr[1] ""
+
+msgid "Translation from haml, [do not translate, just an example...]"
+msgstr ""
+
+msgid "Update"
+msgstr ""
+
+msgid "activerecord.errors.models.car.attributes.model.blank"
+msgstr "-- please choose a model or I will not continue!"
+
+msgid "car"
+msgstr ""
+
+msgid "country|should not be blank"
+msgstr ""
+
+msgid "haml|This paragraph is rendered using the s_() method under the namespace \"haml\" in a haml view."
+msgstr ""
+
+msgid "msgids with braces (like this) work too..."
+msgstr ""
+
+msgid "slim|This paragraph is rendered using the s_() method under the namespace \"slim\" in a slim view."
+msgstr ""
+
+msgid "test html_safe %{x}"
+msgstr "test <a href='/'>html_safe</a> %{x}"
+
+msgid "this is a dynamic translation which was found thorugh gettext_test_log!"
+msgstr ""
