@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: version 0.0.1\n"
-"POT-Creation-Date: 2011-12-09 21:34-0800\n"
+"POT-Creation-Date: 2012-06-16 08:05-0700\n"
 "PO-Revision-Date: 2009-02-18 14:53+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,6 +31,9 @@ msgstr[2] "osi"
 
 msgid "Back"
 msgstr "Powrót"
+
+msgid "Car"
+msgstr "auto"
 
 msgid "Car was successfully created."
 msgstr "Auto zostało pomyślnie utworzone."
@@ -82,9 +85,6 @@ msgstr "Aktualizuj"
 
 msgid "activerecord.errors.models.car.attributes.model.blank"
 msgstr "sorry my polish is bad :D but the point is that this is a I18n translation..."
-
-msgid "car"
-msgstr "auto"
 
 msgid "this is a dynamic translation which was found thorugh gettext_test_log!"
 msgstr "to jest tłumaczenie dynamiczne, które zostało znalezione przez gettext_test_log!"

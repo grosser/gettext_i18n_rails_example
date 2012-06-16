@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: version 0.0.1\n"
-"POT-Creation-Date: 2011-12-09 21:34-0800\n"
+"POT-Creation-Date: 2012-06-16 08:05-0700\n"
 "PO-Revision-Date: 2009-02-18 14:53+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,6 +30,9 @@ msgstr[1] "Achsen"
 
 msgid "Back"
 msgstr "Zurück"
+
+msgid "Car"
+msgstr "Auto"
 
 msgid "Car was successfully created."
 msgstr "Auto wurde erfolgreich gespeichert"
@@ -81,9 +84,6 @@ msgstr "Aktualisieren"
 
 msgid "activerecord.errors.models.car.attributes.model.blank"
 msgstr "-- bitte such dir ein Model aus sonst geht das hier nicht weiter!"
-
-msgid "car"
-msgstr "Auto"
 
 msgid "this is a dynamic translation which was found thorugh gettext_test_log!"
 msgstr "Dies ist eine dynamische Übersetzung, die durch gettext_test_log gefunden wurde!"
