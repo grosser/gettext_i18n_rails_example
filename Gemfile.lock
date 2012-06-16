@@ -14,6 +14,8 @@ GEM
     fast_gettext (0.5.13)
     gettext (2.1.0)
       locale (>= 2.0.5)
+    gettext_i18n_rails (0.6.2)
+      fast_gettext
     i18n_data (0.2.7)
       activesupport
     locale (2.0.5)
@@ -41,6 +43,7 @@ PLATFORMS
 DEPENDENCIES
   fast_gettext (>= 0.4.8)
   gettext
+  gettext_i18n_rails
   i18n_data
   rails (= 2.3.14)
   rdoc

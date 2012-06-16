@@ -1,9 +1,11 @@
 # include at least one source and the rails gem
 source :rubygems
+
 gem 'rails', '2.3.14', :require => nil
 gem 'sqlite3-ruby', :require => 'sqlite3'
 gem 'fast_gettext', '>=0.4.8'
 gem 'rdoc'
+gem 'gettext_i18n_rails'#, :path => "~/code/tools/gettext_i18n_rails"
 
 # for language/country translations
 gem 'i18n_data'

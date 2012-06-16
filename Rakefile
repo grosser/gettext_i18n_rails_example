@@ -7,5 +7,5 @@ require 'rake'
 require 'rake/testtask'
 require 'rdoc'
 require 'rake/rdoctask'
-
 require 'tasks/rails'
+require "gettext_i18n_rails/tasks"
