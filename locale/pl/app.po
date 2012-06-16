@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: version 0.0.1\n"
-"POT-Creation-Date: 2012-01-10 07:51-0800\n"
+"POT-Creation-Date: 2012-06-15 19:50-0700\n"
 "PO-Revision-Date: 2009-02-18 14:53+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,6 +31,9 @@ msgstr[2] "osi"
 
 msgid "Back"
 msgstr "Powrót"
+
+msgid "Car"
+msgstr "Auto"
 
 msgid "Car was successfully created."
 msgstr "Auto zostało pomyślnie utworzone."
@@ -103,9 +106,6 @@ msgstr "Aktualizuj"
 
 msgid "activerecord.errors.models.car.attributes.model.blank"
 msgstr "sorry my polish is bad :D but the point is that this is a I18n translation..."
-
-msgid "car"
-msgstr "auto"
 
 msgid "country|should not be blank"
 msgstr "i dont know polish, but this is enough to test it :D"
