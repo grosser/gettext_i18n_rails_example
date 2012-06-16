@@ -6,8 +6,6 @@ RAILS_GEM_VERSION = '>=2.3.0' unless defined? RAILS_GEM_VERSION
 # Bootstrap the Rails environment, frameworks, and default configuration
 require File.join(File.dirname(__FILE__), 'boot')
 
-YAML::ENGINE.yamler = 'syck'
-
 Rails::Initializer.run do |config|
   config.time_zone = 'UTC'
   # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
