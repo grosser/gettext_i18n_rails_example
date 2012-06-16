@@ -37,7 +37,7 @@ GEM
     fast_gettext (0.6.8)
     gettext (2.2.1)
       locale
-    gettext_i18n_rails (0.6.2)
+    gettext_i18n_rails (0.6.3)
       fast_gettext
     haml (3.1.6)
     hike (1.2.1)

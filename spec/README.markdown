@@ -1,4 +1,4 @@
-This are no real tests, but simply tests for the I18n features.
+Theses are no real tests, but simply tests for the I18n features.
 
 Steps to repeat
 ===============
