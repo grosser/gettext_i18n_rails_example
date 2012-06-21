@@ -1,5 +1,0 @@
-require 'rubygems'
-$LOAD_PATH << 'lib'
-require 'active_support'
-require 'action_controller'
-require 'countries_and_languages/rails'
