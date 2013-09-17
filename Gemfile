@@ -15,7 +15,7 @@ gem "countries_and_languages", '>=0.1.2', :require => 'countries_and_languages/r
 gem "haml"
 gem "ruby_parser", :require => false
 gem "slim"
-gem "gettext_i18n_rails"# , :path => "~/code/tools/gettext_i18n_rails"
+gem "gettext_i18n_rails"#, :path => "~/code/tools/gettext_i18n_rails"
 
 group :test do
   gem 'rspec', '>=2'
