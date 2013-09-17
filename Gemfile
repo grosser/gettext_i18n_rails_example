@@ -16,6 +16,7 @@ gem "haml"
 gem "ruby_parser", :require => false
 gem "slim"
 gem "gettext_i18n_rails"#, :path => "~/code/tools/gettext_i18n_rails"
+# gem "debugger", :require => nil
 
 group :test do
   gem 'rspec', '>=2'
