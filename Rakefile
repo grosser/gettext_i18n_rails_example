@@ -12,3 +12,12 @@ GettextExampleRails::Application.load_tasks
 task :default do
   sh "rspec spec"
 end
+
+prerequisites = Rake::Task["gettext:find"].prerequisites
+prerequisites.unshift "auto_change"
+
+desc "make sure gettext:find generates new pot/po files"
+task :auto_change do
+  sh "touch locale/testlog_phrases.rb"
+end
+
