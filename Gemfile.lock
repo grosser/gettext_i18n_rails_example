@@ -1,8 +1,8 @@
 GIT
   remote: https://github.com/ruby-gettext/gettext.git
-  revision: 00c79819be9f51b5111a72c78ac1c6af307a1859
+  revision: b9098e81e178de6d0d43cff02ba25ff592892f3f
   specs:
-    gettext (3.0.1)
+    gettext (3.0.2)
       locale (>= 2.0.5)
       text
 
@@ -51,7 +51,7 @@ GEM
     i18n_data (0.3.2)
     journey (1.0.4)
     json (1.7.5)
-    locale (2.0.8)
+    locale (2.0.9)
     mail (2.4.4)
       i18n (>= 0.4.0)
       mime-types (~> 1.16)
