@@ -1,11 +1,3 @@
-GIT
-  remote: https://github.com/ruby-gettext/gettext.git
-  revision: b9098e81e178de6d0d43cff02ba25ff592892f3f
-  specs:
-    gettext (3.0.2)
-      locale (>= 2.0.5)
-      text
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -43,6 +35,9 @@ GEM
     diff-lcs (1.1.3)
     erubis (2.7.0)
     fast_gettext (0.6.9)
+    gettext (3.0.2)
+      locale (>= 2.0.5)
+      text
     gettext_i18n_rails (0.7.1)
       fast_gettext (>= 0.4.8)
     haml (3.1.7)
@@ -123,7 +118,7 @@ PLATFORMS
 DEPENDENCIES
   countries_and_languages (>= 0.1.2)
   fast_gettext (>= 0.5)
-  gettext (>= 3.0.1)!
+  gettext (>= 3.0.2)
   gettext_i18n_rails
   haml
   rails (~> 3.2.0)
