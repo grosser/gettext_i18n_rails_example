@@ -24,7 +24,7 @@ translations for model names/attributes + thrugh gettext-ruby-parser
 Convert them to FastGettext readable format
     rake gettext:pack
 
-You can see this app running (rails 2.3 version) [online Demo](http://gettext-i18n-rails-example.heroku.com/)
+You can see this app running (rails 2.3 version) [online Demo](http://gettext-i18n-rails-example.herokuapp.com/)
 
 TODO
 ====
