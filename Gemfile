@@ -4,7 +4,7 @@ ruby File.read('.ruby-version').strip
 
 gem "rails", "~>3.2.0"
 
-gem "sqlite3"
+gem "pg"
 gem "fast_gettext", '>= 0.5'
 
 #only used for mo/po file generation in development, !do not load(:lib=>false)! since it will only eat 7mb ram
@@ -18,6 +18,7 @@ gem "haml"
 gem "ruby_parser", :require => false
 gem "slim"
 gem "gettext_i18n_rails"#, :path => "~/code/tools/gettext_i18n_rails"
+gem "thin"
 # gem "debugger", :require => nil
 
 group :test do
