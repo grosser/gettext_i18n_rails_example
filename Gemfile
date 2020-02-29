@@ -3,6 +3,8 @@ source "https://rubygems.org"
 ruby File.read('.ruby-version').strip
 
 gem "rails", "~>3.2.0"
+gem "sqlite3", "~> 1.3.5"
+gem "test-unit"
 
 gem "pg"
 gem "fast_gettext", '>= 0.5'
